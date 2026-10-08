@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Made by cyberpunk -->
+<meta name="author" content="cyberpunk">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyberShield 2077 | AI Scam &amp; Phishing Shield for India</title>
+<meta name="description" content="Check any suspicious SMS, WhatsApp message or email in seconds. Free scam and phishing detection in English and Hindi, with one-tap 1930 helpline and a cyber crime complaint builder. Runs in your browser.">
+<meta property="og:type" content="website"><meta property="og:title" content="CyberShield 2077 | AI Scam &amp; Phishing Shield"><meta property="og:description" content="Paste a suspicious message and get an instant verdict in English or Hindi. Private, free, runs in your browser.">
+<meta name="theme-color" content="#050b14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Cpath d=%27M50 6L90 22V52C90 76 72 90 50 96C28 90 10 76 10 52V22Z%27 fill=%27%23061626%27 stroke=%27%2335d8ff%27 stroke-width=%278%27/%3E%3C/svg%3E">
+<style>
+:root{--bg:#050b14;--p:#0a1626;--line:#12344f;--c:#4c8dff;--c2:#a9c4f5;--ink:#d5eefa;--mute:#6f93a8;--ok:#3dff9a;--warn:#ffb83d;--bad:#ff4d5e}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:radial-gradient(ellipse at 50% 35%,#0b2238 0%,var(--bg) 65%);color:var(--ink);font-family:"Segoe UI",Arial,sans-serif;min-height:100vh}
+#boot{position:fixed;inset:0;z-index:10;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:20px}
+#boot h1{font-weight:200;letter-spacing:.3em;margin:0;font-size:clamp(1.4rem,5vw,2.4rem);color:var(--c2);padding-left:.3em}
+#boot button{background:transparent;border:1px solid var(--c);color:var(--c);padding:14px 38px;letter-spacing:.3em;cursor:pointer;transition:.25s;font-size:.9rem}
+#boot button:hover{background:var(--c);color:var(--bg);box-shadow:0 0 30px var(--c)}
+small{color:var(--mute)}
+.app{display:none;padding:16px;grid-template-columns:1fr minmax(290px,1fr) 1fr;gap:14px}
+.app.on{display:grid}
+header{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:10px;flex-wrap:wrap;gap:6px}
+header b{letter-spacing:.35em;font-weight:300;color:var(--c2)}
+header span{color:var(--mute);font-size:.85rem}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:8px;box-shadow:0 0 8px var(--ok)}
+.panel{background:rgba(10,22,38,.9);border:1px solid var(--line);border-radius:4px;padding:16px;position:relative}
+.panel:before,.panel:after{content:"";position:absolute;width:12px;height:12px;border:2px solid var(--c)}
+.panel:before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.panel:after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+h2{margin:0 0 12px;font-size:.76rem;font-weight:600;letter-spacing:.25em;color:var(--c)}
+.tabs{display:flex;margin-bottom:12px;border:1px solid var(--line)}
+.tab{flex:1;background:none;border:0;color:var(--mute);padding:10px;cursor:pointer;font:inherit;font-size:.85rem;letter-spacing:.12em}
+.tab.on{background:rgba(76,141,255,.15);color:var(--c2)}
+input,textarea,select{width:100%;background:#06101c;border:1px solid var(--line);color:var(--ink);padding:10px;font:inherit;font-size:.92rem;border-radius:3px;margin-bottom:8px}
+textarea{height:120px;resize:none}
+input:focus,textarea:focus,select:focus{outline:1px solid var(--c)}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.btn{background:rgba(76,141,255,.08);border:1px solid var(--c);color:var(--c2);padding:9px 14px;cursor:pointer;font:inherit;font-size:.8rem;letter-spacing:.1em;border-radius:3px;transition:.2s}
+.btn:hover{background:var(--c);color:var(--bg)}
+.btn.live{background:var(--bad);border-color:var(--bad);color:#fff;}
+
+.samples{margin-top:12px;display:flex;flex-direction:column;gap:6px}
+.s{background:none;border:1px solid var(--line);color:var(--mute);padding:7px 10px;text-align:left;font:inherit;font-size:.78rem;cursor:pointer;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.s:hover{border-color:var(--c);color:var(--ink)}
+.center{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.stage{position:relative;width:min(360px,80vw);height:min(360px,80vw)}
+#reactor{width:100%;height:100%}
+#logo{position:absolute;left:50%;top:50%;width:44%;height:50%;transform:translate(-50%,-50%);perspective:700px;pointer-events:none}
+.coin{position:relative;width:100%;height:100%;transform-style:preserve-3d;will-change:transform}
+#logo:before{content:"";position:absolute;inset:-18%;background:radial-gradient(circle,rgba(76,141,255,.35),transparent 62%)}
+.face{position:absolute;inset:0;backface-visibility:hidden}.face svg{width:100%;height:100%}
+.face.b{transform:rotateY(180deg)}
+.ring{transform-origin:200px 200px}
+
+#core{transform-origin:200px 200px;transition:transform .12s}
+#state{letter-spacing:.4em;font-size:.8rem;color:var(--c2);padding-left:.4em}
+#subtitle{min-height:60px;max-width:380px;text-align:center;color:var(--mute);font-size:.88rem}
+.meter{height:10px;background:#06101c;border:1px solid var(--line);margin:8px 0 14px}
+#fill{height:100%;width:0;background:var(--ok);transition:width 1s,background .5s}
+#verdict{font-size:1.4rem;font-weight:300;letter-spacing:.14em;margin:0 0 4px}
+#pct{color:var(--mute);font-size:.85rem}
+#finds{list-style:none;padding:0;margin:8px 0 0}
+#finds li{padding:7px 0 7px 12px;border-left:2px solid var(--line);margin-bottom:6px;font-size:.86rem}
+.lvl-scam #verdict{color:var(--bad);text-shadow:0 0 16px var(--bad)}.lvl-scam #finds li{border-color:var(--bad)}
+.lvl-maybe #verdict{color:var(--warn)}.lvl-maybe #finds li{border-color:var(--warn)}
+.lvl-safe #verdict{color:var(--ok)}.lvl-safe #finds li{border-color:var(--ok)}
+.tip{margin-top:12px;font-size:.84rem;color:var(--c2);border-top:1px solid var(--line);padding-top:10px}
+.log{grid-column:1/-1;height:110px;overflow-y:auto;font:.76rem/1.6 Consolas,monospace;color:var(--mute)}
+.log .u{color:var(--c2)}.log .j{color:var(--ink)}
+body{transition:background 1s}
+body.alert{background:radial-gradient(ellipse at 50% 35%,#3a0710 0%,#0d0305 70%);--c:#ff3b4e;--c2:#ff9aa4;--line:#5c1822;--ink:#ffe6e9;--mute:#c98a92}
+.stage{transition:filter .4s}body.alert .stage{filter:hue-rotate(165deg) saturate(1.5)}
+#alertFx{position:fixed;inset:0;pointer-events:none;z-index:5;opacity:0;box-shadow:inset 0 0 140px 40px rgba(255,20,40,.65);transition:opacity .3s}
+body.alert #alertFx{opacity:1;}
+
+#alertBanner{position:fixed;top:58px;left:50%;transform:translateX(-50%);z-index:6;display:none;padding:8px 26px;border:2px solid #ff3b4e;background:rgba(60,0,10,.88);color:#fff;letter-spacing:.35em;font-weight:700;font-size:.95rem;white-space:nowrap;}
+body.alert #alertBanner{display:block}
+
+body.safe{background:radial-gradient(ellipse at 50% 35%,#073a1d 0%,#030d07 70%);--c:#3dff9a;--c2:#a6ffd2;--line:#14502f;--ink:#e3ffef;--mute:#85c9a1}
+body.safe .stage{filter:hue-rotate(300deg) saturate(1.3)}
+body.safe #alertFx{opacity:1;box-shadow:inset 0 0 120px 25px rgba(30,255,140,.4);}
+
+#safeBanner{position:fixed;top:58px;left:50%;transform:translateX(-50%);z-index:6;display:none;padding:8px 26px;border:2px solid #3dff9a;background:rgba(0,40,18,.88);color:#fff;letter-spacing:.35em;font-weight:700;font-size:.95rem;white-space:nowrap}
+body.safe #safeBanner{display:block}
+
+a.btn{text-decoration:none;display:inline-block}
+.sos{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
+.sos small{display:block;margin-top:8px;font-size:.75rem}
+body.alert .sos .btn{border-color:#ff3b4e;color:#fff;background:rgba(255,59,78,.25);}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.5;transition:filter .5s}
+body.alert #bg{filter:hue-rotate(165deg) saturate(1.5)}body.safe #bg{filter:hue-rotate(300deg)}
+.app{position:relative;z-index:1}
+.panel{backdrop-filter:blur(6px);box-shadow:0 10px 40px rgba(0,0,0,.45),inset 0 0 40px rgba(76,141,255,.05);overflow:hidden}
+.btn:hover{box-shadow:0 0 18px rgba(76,141,255,.55)}
+
+#scanline{position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--c),transparent);box-shadow:0 0 14px var(--c);opacity:0;pointer-events:none}
+#out.scanning #scanline{opacity:1;}
+
+footer{grid-column:1/-1;text-align:center;color:var(--mute);font-size:.7rem;letter-spacing:.25em;padding:4px 0 10px}
+#bootLog{font:12px/1.8 Consolas,monospace;color:var(--c2);min-height:112px;text-align:left}
+#bar{width:min(320px,70vw);height:3px;background:var(--line);display:none}#barf{height:100%;width:0;background:var(--c);box-shadow:0 0 10px var(--c);transition:width 2.6s ease-out}
+@media(max-width:900px){.app.on{grid-template-columns:1fr}}
+
+
+/* ===== FINAL RELEASE v1.0 : landing + polish ===== */
+#boot{display:block;overflow-y:auto;padding:0;text-align:left;scroll-behavior:smooth}
+.gridbg{position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(76,141,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(76,141,255,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 75%)}
+.sweep{position:fixed;left:0;right:0;height:120px;top:-120px;pointer-events:none;background:linear-gradient(transparent,rgba(76,141,255,.07),transparent);}
+.lnav,.hero,.stats,.feat,.lfoot{position:relative;max-width:1180px;margin:0 auto;padding-left:22px;padding-right:22px}
+.lnav{display:flex;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px;gap:10px;flex-wrap:wrap}
+.lbrand{display:flex;align-items:center;gap:10px;letter-spacing:.3em;font-size:.85rem;color:var(--c2)}.lbrand svg{width:30px;height:30px}.lbrand i{font-style:normal;color:var(--c)}
+.lchip{border:1px solid var(--line);padding:6px 14px;border-radius:30px;font-size:.7rem;letter-spacing:.18em;color:var(--mute);background:rgba(10,22,38,.7)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;min-height:calc(100vh - 80px);padding-bottom:30px}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;color:var(--c);margin-bottom:14px}
+#boot .hero h1{font-weight:200;font-size:clamp(2.2rem,6.4vw,4.6rem);letter-spacing:.12em;line-height:1.05;margin:0 0 16px;padding:0;color:#fff;text-shadow:0 0 30px rgba(76,141,255,.55)}
+.lead{font-size:1.1rem;color:var(--ink);margin:0 0 14px;max-width:520px;line-height:1.6;opacity:.9}
+.jline{font:.85rem Consolas,monospace;color:var(--c2);min-height:22px;margin:0 0 24px}.cur{display:inline-block;width:8px;height:15px;background:var(--c);margin-left:3px;vertical-align:-2px;}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+#boot #init{background:linear-gradient(90deg,#4c8dff,#a9c4f5);color:#04101c;border:0;font-weight:700;padding:16px 34px;letter-spacing:.22em;border-radius:3px;box-shadow:0 0 28px rgba(76,141,255,.5);}
+#boot #init:hover{transform:translateY(-2px);box-shadow:0 0 46px var(--c);background:#a9c4f5;color:#04101c}
+.ghost{border:1px solid var(--line);color:var(--c2);padding:16px 26px;letter-spacing:.2em;font-size:.8rem;text-decoration:none;border-radius:3px;transition:.2s}.ghost:hover{border-color:var(--c);box-shadow:0 0 18px rgba(76,141,255,.4)}
+#bar{margin-top:16px;width:min(380px,100%)}
+.hud{position:relative;width:min(440px,86vw);aspect-ratio:1;margin:0 auto}
+.hr{position:absolute;border-radius:50%;border:2px solid transparent}
+.h1{inset:0;border-top-color:var(--c);border-bottom-color:rgba(76,141,255,.25);}
+.h2{inset:8%;border:1px dashed rgba(123,232,255,.55);}
+.h3{inset:17%;border-left-color:var(--c2);border-right-color:rgba(76,141,255,.2);border-width:5px;}
+.h4{inset:27%;border:1px solid var(--line);box-shadow:0 0 50px rgba(76,141,255,.25),inset 0 0 50px rgba(76,141,255,.15)}
+.hcore{position:absolute;inset:34%;display:grid;place-items:center;filter:drop-shadow(0 0 16px var(--c))}.hcore svg{width:100%}
+.tag{position:absolute;font:.68rem Consolas,monospace;letter-spacing:.2em;color:var(--c2);border:1px solid var(--line);background:rgba(5,11,20,.85);padding:4px 10px;}
+.t1{top:6%;left:4%}.t2{top:14%;right:0;}.t3{bottom:12%;left:0;}.t4{bottom:5%;right:8%;}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:10px;padding:0}
+.stats div{background:rgba(10,22,38,.92);padding:22px 12px;text-align:center}.stats b{display:block;font-size:2rem;font-weight:200;color:var(--c2);text-shadow:0 0 14px rgba(76,141,255,.5)}.stats small{letter-spacing:.2em;font-size:.65rem}
+.feat{padding-top:56px}.feat h3{letter-spacing:.35em;font-size:.78rem;font-weight:600;color:var(--c);margin:0 0 20px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cards article{background:rgba(10,22,38,.88);border:1px solid var(--line);padding:20px;border-radius:4px;transition:.25s;position:relative}
+.cards article:hover{border-color:var(--c);transform:translateY(-4px);box-shadow:0 12px 36px rgba(76,141,255,.18)}
+.cards u{text-decoration:none;color:var(--c);font:.75rem Consolas,monospace}.cards h4{margin:10px 0 8px;font-weight:400;letter-spacing:.08em;color:#fff;font-size:1rem}.cards p{margin:0;color:var(--mute);font-size:.85rem;line-height:1.6}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.steps div{border-left:2px solid var(--c);padding:6px 0 6px 16px;color:var(--ink);font-size:.92rem}.steps b{display:block;font-size:1.8rem;font-weight:200;color:var(--c)}
+.lfoot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:46px;padding-bottom:30px;margin-top:50px;border-top:1px solid var(--line);font-size:.72rem;letter-spacing:.14em;color:var(--mute)}
+@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;min-height:0}.lead{margin-left:auto;margin-right:auto}.cta{justify-content:center}.cards{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}}
+/* app polish */
+.ver{margin:0 auto 0 14px;font-style:normal;font-size:.65rem;letter-spacing:.2em;border:1px solid var(--c);color:var(--c2);padding:3px 10px;border-radius:20px}
+.app{max-width:1500px;margin:0 auto}
+header{position:sticky;top:0;z-index:4;background:rgba(5,11,20,.82);backdrop-filter:blur(10px);padding-top:8px;margin:-8px 0 0}
+.panel{transition:border-color .3s,box-shadow .3s}.panel:hover{border-color:rgba(76,141,255,.45)}
+.btn:active{transform:scale(.97)}button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid var(--c2);outline-offset:2px}
+::selection{background:var(--c);color:var(--bg)}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
+
+/* ===== mechanical effects ===== */
+.hud:before{content:"";position:absolute;inset:-3%;border-radius:50%;background:repeating-conic-gradient(rgba(123,232,255,.7) 0 .6deg,transparent .6deg 6deg);mask:radial-gradient(circle,transparent 66%,#000 67%,#000 70%,transparent 71%);-webkit-mask:radial-gradient(circle,transparent 66%,#000 67%,#000 70%,transparent 71%);}
+
+.stats div,.cards article{background-image:linear-gradient(135deg,rgba(255,255,255,.04),transparent 40%)}
+.bt{position:absolute;width:7px;height:7px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#bfefff,#2b5870 60%,#0a1626);box-shadow:0 0 0 1px var(--line)}
+.bt.a{top:7px;left:7px}.bt.b{top:7px;right:7px}.bt.c{bottom:7px;left:7px}.bt.d{bottom:7px;right:7px}
+.cards article:hover .bt{background:radial-gradient(circle at 35% 30%,#fff,var(--c) 60%,#0a1626);box-shadow:0 0 8px var(--c)}
+.cards article:hover{transform:translateY(-4px) perspective(600px) rotateX(2deg)}
+@media(max-width:700px){.g1,.g3{width:220px}.g2,.g4{display:none}}
+
+/* ===== v1.0 smooth motion + functional landing ===== */
+
+
+.sweep{top:0;will-change:transform}
+.hud:before{will-change:transform;}
+.hcore{filter:none}.hcore svg{filter:drop-shadow(0 0 14px var(--c))}
+.hud{transition:transform .25s ease-out;will-change:transform}
+/* nav */
+.lnav{position:sticky;top:0;z-index:8;max-width:none;padding-left:max(22px,calc(50% - 590px));padding-right:max(22px,calc(50% - 590px));background:rgba(5,11,20,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.lbw{display:flex;align-items:center;gap:16px}.lrot{display:flex;align-items:center;gap:8px;padding-left:16px;border-left:1px solid var(--line)}
+.rring{width:30px;height:30px;}
+.tick{position:relative;width:128px;height:16px;font:.66rem Consolas,monospace;letter-spacing:.16em;color:var(--c2)}
+.tick span{position:absolute;left:0;top:0;white-space:nowrap;opacity:0;}
+
+.links{display:flex;gap:6px}.links a{cursor:pointer;font-size:.72rem;letter-spacing:.18em;color:var(--mute);padding:8px 12px;border-bottom:2px solid transparent;transition:.2s}
+.links a:hover,.links a.on{color:var(--c2);border-bottom-color:var(--c)}
+.lact{display:flex;gap:8px;align-items:center}.lact .lchip{margin-right:4px}
+.mini{background:rgba(76,141,255,.08);border:1px solid var(--c);color:var(--c2);padding:8px 14px;font:inherit;font-size:.72rem;letter-spacing:.14em;cursor:pointer;border-radius:3px;transition:.2s}
+.mini:hover{background:var(--c);color:var(--bg)}.mini.solid{background:var(--c);color:var(--bg);font-weight:700}.mini.solid:hover{background:var(--c2)}
+#burger{display:none}
+#prog{position:fixed;top:0;left:0;right:0;height:3px;z-index:12;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,var(--c),var(--c2));box-shadow:0 0 10px var(--c)}
+#toTop{position:fixed;right:20px;bottom:20px;z-index:12;width:42px;height:42px;border-radius:50%;border:1px solid var(--c);background:rgba(5,11,20,.9);color:var(--c2);cursor:pointer;opacity:0;pointer-events:none;transition:.3s}#toTop.on{opacity:1;pointer-events:auto}
+.hero{min-height:calc(100vh - 120px)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.feat[id]{scroll-margin-top:80px}
+/* quick scan */
+.qwrap{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+.qin,.qout{background:rgba(10,22,38,.9);border:1px solid var(--line);border-radius:4px;padding:16px}
+.qin textarea{height:150px}.qbtns{display:flex;gap:8px;flex-wrap:wrap}
+.qs{display:flex;flex-direction:column;gap:6px;margin-top:12px}
+.qout{min-height:260px}.qidle{color:var(--mute);font-size:.88rem}
+.qv{font-size:1.5rem;font-weight:300;letter-spacing:.14em}.qp{color:var(--mute);font-size:.85rem;margin:2px 0 8px}
+.qm{height:10px;background:#06101c;border:1px solid var(--line);margin-bottom:12px}.qm i{display:block;height:100%;width:0;transition:width 1s cubic-bezier(.2,.7,.2,1)}
+.qout ul{list-style:none;padding:0;margin:0}.qout li{padding:6px 0 6px 12px;border-left:2px solid var(--line);margin-bottom:6px;font-size:.85rem}
+.qout.scam .qv{color:var(--bad)}.qout.scam li{border-color:var(--bad)}.qout.maybe .qv{color:var(--warn)}.qout.maybe li{border-color:var(--warn)}.qout.safe .qv{color:var(--ok)}.qout.safe li{border-color:var(--ok)}
+.soss{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sosc{display:block;text-decoration:none;background:rgba(10,22,38,.9);border:1px solid var(--line);border-radius:4px;padding:20px;text-align:center;transition:.25s}
+.sosc b{display:block;font-size:2rem;font-weight:200;color:var(--c2)}.sosc span{font-size:.68rem;letter-spacing:.16em;color:var(--mute)}
+.sosc:hover{border-color:var(--bad);box-shadow:0 0 24px rgba(255,77,94,.3);transform:translateY(-4px)}
+.rules{margin:18px 0 0;color:var(--mute);font-size:.8rem;letter-spacing:.06em}
+@media(max-width:900px){.qwrap{grid-template-columns:1fr}.soss{grid-template-columns:1fr 1fr}.lrot{display:none}#burger{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(5,11,20,.97);border-bottom:1px solid var(--line);padding:8px 22px}.links.open{display:flex}.lact .lchip{display:none}}
+.ghost{cursor:pointer}
+#boot .mini{padding:8px 14px;letter-spacing:.14em;font-size:.72rem;border:1px solid var(--c);color:var(--c2);background:rgba(76,141,255,.08)}
+#boot .mini:hover{background:var(--c);color:var(--bg);box-shadow:none}
+#boot .mini.solid{background:var(--c);color:var(--bg)}#boot .mini.solid:hover{background:var(--c2)}
+#boot #toTop{padding:0;letter-spacing:0;font-size:1.1rem}
+.lnav{flex-wrap:nowrap}.lact{flex-shrink:0}.lbw{flex-shrink:0}
+@media(max-width:900px){.lnav{flex-wrap:wrap}}
+.qwrap>*{min-width:0}
+#boot .s{padding:8px 10px;letter-spacing:0;font-size:.78rem;border:1px solid var(--line);color:var(--mute);background:none;width:100%;text-align:left;box-shadow:none}
+#boot .s:hover{background:rgba(76,141,255,.08);border-color:var(--c);color:var(--ink);box-shadow:none}
+
+/* ===== v1.1 PERFORMANCE + NEW ANIMATIONS ===== */
+body{transition:none}
+.lnav,.panel,header{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.lnav{background:rgba(5,11,20,.95)}header{background:rgba(5,11,20,.95)}.panel{background:rgba(10,22,38,.95)}
+.gridbg{-webkit-mask-image:none;mask-image:none;opacity:.55;contain:strict}.sweep{display:none}
+#boot #init{box-shadow:0 0 22px rgba(76,141,255,.4);position:relative;overflow:visible}
+
+
+.hud:before{content:"";position:absolute;inset:-3%;border-radius:50%;border:5px dotted rgba(123,232,255,.4);-webkit-mask:none;mask:none;background:none;}
+
+.radar{position:absolute;inset:17%;border-radius:50%;background:conic-gradient(from 0deg,rgba(76,141,255,.32),rgba(76,141,255,0) 26%,rgba(76,141,255,0));will-change:transform}
+.hcore svg{filter:none}
+#boot .hero h1{text-shadow:0 0 18px rgba(76,141,255,.4)}
+.cards article,.sosc{transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .3s}
+.cards article:hover{transform:translate3d(0,-5px,0)}.sosc:hover{transform:translate3d(0,-5px,0)}
+.rv{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+/* alert overlays: opacity-only (no animated box-shadow) */
+#alertFx{box-shadow:none!important;background:none}
+#alertFx:before,#alertFx:after{content:"";position:absolute;inset:0;opacity:0}
+#alertFx:before{background:radial-gradient(ellipse at center,transparent 40%,rgba(255,20,40,.78) 100%)}
+#alertFx:after{background:radial-gradient(ellipse at center,transparent 40%,rgba(30,90,255,.8) 100%)}
+body.alert #alertFx{opacity:1;}
+body.safe #alertFx{opacity:1;background:radial-gradient(ellipse at center,transparent 45%,rgba(30,255,140,.55) 100%);}
+
+body.alert .stage,body.safe .stage,body.alert #bg,body.safe #bg{filter:none}
+body.alert #logo{filter:hue-rotate(165deg) saturate(1.5)}body.safe #logo{filter:hue-rotate(300deg)}
+/* scan line: transform only */
+#scanline{top:0;height:100%;background:linear-gradient(transparent calc(100% - 2px),var(--c));box-shadow:none;transform:translate3d(0,-100%,0)}
+#out.scanning #scanline{opacity:1;}
+
+@media(max-width:1500px){.ow{display:none}}
+header>span{white-space:nowrap}
+
+/* ===== v2.0 NEW MOTION SYSTEM (transform + opacity only, one easing) ===== */
+:root{--e:cubic-bezier(.22,.61,.36,1)}
+@keyframes enter{from{opacity:0;transform:translate3d(0,22px,0)}}
+@keyframes fadein{from{opacity:0}}
+@keyframes ripple{0%{opacity:.5;transform:scale(1)}100%{opacity:0;transform:scale(1.9)}}
+@keyframes float{50%{transform:translate3d(0,-9px,0)}}
+@keyframes sheen{0%,60%{transform:translate3d(0,0,0) skewX(-20deg)}100%{transform:translate3d(560%,0,0) skewX(-20deg)}}
+@keyframes soft{50%{opacity:.45}}
+@keyframes breathe{50%{transform:scale(1.035);opacity:.75}}
+@keyframes tk{0%{opacity:0;transform:translate3d(0,8px,0)}5%,24%{opacity:1;transform:none}29%,100%{opacity:0;transform:translate3d(0,-8px,0)}}
+@keyframes spinY{from{transform:rotateY(0deg)}to{transform:rotateY(360deg)}}
+@keyframes drift{from{transform:translate3d(-4%,-3%,0)}to{transform:translate3d(4%,3%,0)}}
+@keyframes sweep3{from{transform:translate3d(0,-100%,0)}to{transform:none}}
+@keyframes cp{50%{transform:scale(1.07)}}
+@keyframes afx{from{opacity:.4}to{opacity:1}}
+@keyframes xr{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes xb{0%,100%{opacity:0}50%{opacity:1}}
+@keyframes scan{0%,100%{opacity:.35}50%{opacity:1}}
+/* landing */
+.lnav{animation:fadein .8s var(--e) backwards}
+.eyebrow,#boot .hero h1,.lead,.jline,.cta,#bootHint{animation:enter 1s var(--e) backwards}
+.eyebrow{animation-delay:.1s}#boot .hero h1{animation-delay:.2s}.lead{animation-delay:.32s}.jline{animation-delay:.42s}.cta{animation-delay:.52s}#bootHint{animation-delay:.62s}
+.hud{animation:fadein 1.4s var(--e) .2s backwards}
+.q{position:absolute;inset:27%;border-radius:50%;border:1.5px solid var(--c);opacity:0;animation:ripple 5.4s var(--e) infinite;will-change:transform,opacity}
+.q2{animation-delay:1.8s}.q3{animation-delay:3.6s}
+.hcore{animation:float 7s ease-in-out infinite;will-change:transform}
+.tag{animation:float 6s ease-in-out infinite}.t2{animation-delay:-1.5s}.t3{animation-delay:-3s}.t4{animation-delay:-4.5s}
+#boot #init{overflow:hidden}
+#boot #init:after{content:"";position:absolute;top:0;bottom:0;left:-30%;width:30%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);animation:sheen 4.5s ease-in-out infinite;pointer-events:none}
+.ldot{position:relative;width:12px;height:12px;display:inline-block}.ldot:before,.ldot:after{content:"";position:absolute;inset:0;border-radius:50%}
+.ldot:before{background:var(--c);inset:2px}.ldot:after{border:1.5px solid var(--c);animation:ripple 2.4s var(--e) infinite}
+.tick span{animation:tk 12s var(--e) infinite}.tick span:nth-child(2){animation-delay:3s}.tick span:nth-child(3){animation-delay:6s}.tick span:nth-child(4){animation-delay:9s}
+.cur{animation:soft 1.2s ease-in-out infinite}
+#jtxt{display:inline-block;opacity:0;transform:translate3d(0,6px,0);transition:opacity .6s var(--e),transform .6s var(--e)}#jtxt.show{opacity:1;transform:none}
+.feat.in .cards article,.feat.in .sosc,.feat.in .steps div,.stats.in div{animation:enter .9s var(--e) backwards}
+.feat.in .cards article:nth-child(2),.feat.in .sosc:nth-child(2),.feat.in .steps div:nth-child(2),.stats.in div:nth-child(2){animation-delay:.1s}
+.feat.in .cards article:nth-child(3),.feat.in .sosc:nth-child(3),.feat.in .steps div:nth-child(3),.stats.in div:nth-child(3){animation-delay:.2s}
+.feat.in .cards article:nth-child(4),.feat.in .sosc:nth-child(4),.stats.in div:nth-child(4){animation-delay:.3s}
+.btn,.mini,.tab,.s,.links a{transition-duration:.3s;transition-timing-function:var(--e)}
+/* veil transition (replaces steel shutter) */
+#shutter{position:fixed;inset:0;z-index:50;pointer-events:none;background:#050b14;opacity:0;visibility:hidden;display:grid;place-items:center;transition:opacity .85s var(--e),visibility 0s linear .85s}
+#shutter.shut{opacity:1;visibility:visible;transition:opacity .75s var(--e),visibility 0s}
+.vl{display:grid;justify-items:center;gap:14px;color:var(--c2);letter-spacing:.35em;font-size:.72rem;transform:scale(.92);transition:transform 1.4s var(--e)}
+#shutter.shut .vl{transform:none}.vl svg{width:84px;height:84px}
+/* app */
+.app.on>*{animation:enter .9s var(--e) backwards}
+.app.on>*:nth-child(1){animation-name:fadein;animation-delay:.5s}.app.on>*:nth-child(2){animation-delay:.6s}.app.on>*:nth-child(3){animation-delay:.7s}.app.on>*:nth-child(4){animation-delay:.8s}.app.on>*:nth-child(5){animation-delay:.9s}.app.on>*:nth-child(6){animation-delay:1s}
+.app.on .stage{animation:fadein 1.3s var(--e) .7s backwards}
+.r1{animation:breathe 7s ease-in-out infinite}.r2{animation:breathe 7s ease-in-out -2.3s infinite}.r3{animation:breathe 7s ease-in-out -4.6s infinite}
+#core.speak{animation:cp 1s ease-in-out infinite}
+.coin{animation:spinY 11s linear infinite}
+.blink{animation:scan 3s ease-in-out infinite}
+#bg{display:none}
+#aur{position:fixed;inset:-10%;z-index:0;pointer-events:none;background:radial-gradient(40% 35% at 25% 30%,color-mix(in srgb,var(--c) 11%,transparent),transparent 70%),radial-gradient(35% 30% at 78% 70%,color-mix(in srgb,var(--c) 8%,transparent),transparent 70%);animation:drift 24s ease-in-out infinite alternate;will-change:transform}
+#verdict,#finds li{animation:enter .8s var(--e) backwards}#finds li:nth-child(2){animation-delay:.1s}#finds li:nth-child(3){animation-delay:.2s}#finds li:nth-child(4){animation-delay:.3s}#finds li:nth-child(5){animation-delay:.4s}
+#out.scanning #scanline{opacity:1;animation:sweep3 1s var(--e)}
+.btn.live{animation:soft 1.2s ease-in-out infinite}
+body.alert #alertBanner{animation:soft 1s ease-in-out infinite}
+body.alert .sos .btn{animation:soft 1.3s ease-in-out infinite}
+body.alert:not(.police) #alertFx:before{animation:afx .9s ease-in-out infinite alternate}
+body.alert.police #alertFx:before{animation:xr 1.2s ease-in-out infinite}
+body.alert.police #alertFx:after{animation:xb 1.2s ease-in-out infinite}
+body.safe #alertFx{animation:afx 1.8s ease-in-out infinite alternate}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* AI reply effect: word-by-word reveal + voice wave + reactor ripple */
+@keyframes wordin{from{opacity:0;transform:translate3d(0,9px,0)}}
+@keyframes eq{0%,100%{transform:scaleY(.14)}50%{transform:scaleY(1)}}
+.w{display:inline-block;white-space:pre;animation:wordin .55s var(--e) backwards}
+#subtitle{transition:color .6s var(--e)}.talk #subtitle{color:var(--c2)}
+#wave{display:flex;gap:4px;align-items:center;justify-content:center;height:30px;opacity:0;transform:scaleY(.5);transition:opacity .5s var(--e),transform .5s var(--e)}
+.talk #wave{opacity:1;transform:none}
+#wave i{display:block;width:3px;height:100%;border-radius:2px;background:linear-gradient(var(--c2),var(--c));transform:scaleY(.14);will-change:transform}
+.talk #wave i{animation:eq 1s ease-in-out infinite}
+#wave i:nth-child(2n){animation-duration:.8s}#wave i:nth-child(3n){animation-duration:1.25s}#wave i:nth-child(5n){animation-duration:.9s}
+#wave i:nth-child(1){animation-delay:-.1s}#wave i:nth-child(2){animation-delay:-.45s}#wave i:nth-child(3){animation-delay:-.2s}#wave i:nth-child(4){animation-delay:-.7s}#wave i:nth-child(5){animation-delay:-.35s}#wave i:nth-child(6){animation-delay:-.9s}#wave i:nth-child(7){animation-delay:-.05s}#wave i:nth-child(8){animation-delay:-.6s}#wave i:nth-child(9){animation-delay:-.3s}#wave i:nth-child(10){animation-delay:-.8s}#wave i:nth-child(11){animation-delay:-.15s}#wave i:nth-child(12){animation-delay:-.55s}#wave i:nth-child(13){animation-delay:-.25s}
+.stage:after{content:"";position:absolute;inset:16%;border-radius:50%;border:2px solid var(--c);opacity:0;pointer-events:none}
+.talk .stage:after{animation:ripple 1.9s var(--e) infinite}
+
+/* orbit effects around logos */
+@keyframes orbit{to{transform:rotate(360deg)}}
+.orb,.ho,.nr{position:absolute;border-radius:50%;pointer-events:none;will-change:transform;animation-timing-function:linear!important}
+.o1{inset:24%;border:1.5px solid transparent;border-top-color:var(--c2);border-bottom-color:color-mix(in srgb,var(--c) 35%,transparent);animation:orbit 9s linear infinite}
+.o2{inset:20%;border:1px dashed color-mix(in srgb,var(--c) 55%,transparent);animation:orbit 16s linear infinite reverse}
+.o3{inset:16%;animation:orbit 12s linear infinite}
+.o3:before,.o3:after,.ho:before,.ho:after{content:"";position:absolute;border-radius:50%;background:var(--c2);box-shadow:0 0 10px var(--c)}
+.o3:before{width:9px;height:9px;top:-4px;left:calc(50% - 4px)}.o3:after{width:6px;height:6px;bottom:-3px;left:calc(50% - 3px);opacity:.7}
+.ho{inset:31%;border:1.5px solid transparent;border-top-color:var(--c);border-bottom-color:color-mix(in srgb,var(--c) 30%,transparent);animation:orbit 10s linear infinite}
+.ho2{inset:25%;border-top-color:transparent;border-bottom-color:transparent;border:1px dashed color-mix(in srgb,var(--c) 50%,transparent);animation:orbit 17s linear infinite reverse}
+.ho:before{width:8px;height:8px;top:-4px;left:calc(50% - 4px)}.ho2:before{top:auto;bottom:-4px}.ho:after{display:none}
+.nl{position:relative;width:40px;height:40px;display:grid;place-items:center;flex:none}
+.nr{inset:0;border:1.5px solid transparent;border-top-color:var(--c);border-left-color:color-mix(in srgb,var(--c) 40%,transparent);animation:orbit 3.2s linear infinite}
+.nr:after{content:"";position:absolute;width:5px;height:5px;border-radius:50%;background:var(--c2);box-shadow:0 0 8px var(--c);top:-3px;left:calc(50% - 2px)}
+#barf{transition-duration:2.9s}
+
+/* ===== v2.0 PROFESSIONAL THEME ===== */
+:root{--bg:#060d18;--p:#0b1626;--line:#1b3452;--c:#4c8dff;--c2:#a9c4f5;--ink:#e8f2fb;--mute:#8aa4b8;--ok:#2ee59d;--warn:#ffb020;--bad:#ff5468}
+body{font-family:Inter,"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:radial-gradient(1100px 620px at 50% -8%,#10304f 0%,var(--bg) 64%);line-height:1.5}
+body.alert{background:radial-gradient(ellipse at 50% 35%,#3a0710 0%,#0d0305 70%)}
+body.safe{background:radial-gradient(ellipse at 50% 35%,#073a1d 0%,#030d07 70%)}
+.panel{border-radius:12px;background:linear-gradient(180deg,rgba(14,28,46,.97),rgba(9,19,33,.97));box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 20px 44px -20px rgba(0,0,0,.75);padding:20px}
+.panel:before,.panel:after{display:none}
+h2{display:flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.2em;color:var(--c2);font-weight:600}
+h2:before{content:"";width:3px;height:14px;border-radius:2px;background:var(--c)}
+.tabs{border-radius:9px;overflow:hidden;background:#07111f}
+.tab{font-weight:600;letter-spacing:.1em;font-size:.76rem}
+.tab.on{background:var(--c);color:#04101c}
+input,textarea,select{border-radius:8px;background:#07111f;border:1px solid var(--line);transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus,select:focus{outline:0;border-color:var(--c);box-shadow:0 0 0 3px rgba(76,141,255,.18)}
+.btn,.mini{border-radius:8px;font-weight:600;letter-spacing:.08em;background:rgba(76,141,255,.1);border:1px solid rgba(76,141,255,.5)}
+.btn:hover,.mini:hover{box-shadow:none;background:var(--c);color:#04101c}
+#scan{background:var(--c);color:#04101c;border-color:var(--c)}#scan:hover{background:var(--c2)}
+.btn.live{background:var(--bad);border-color:var(--bad);color:#fff}
+#verdict{display:inline-block;font-size:1rem;font-weight:700;letter-spacing:.14em;padding:6px 16px;border-radius:999px;border:1px solid currentColor;background:color-mix(in srgb,currentColor 12%,transparent);text-shadow:none!important}
+.lvl-scam #verdict{color:var(--bad)}.lvl-maybe #verdict{color:var(--warn)}.lvl-safe #verdict{color:var(--ok)}
+.meter,.qm{height:8px;border-radius:99px;overflow:hidden}#fill{border-radius:99px}
+#finds li{background:rgba(255,255,255,.035);border-radius:6px;border-left-width:3px;padding:8px 12px}
+.tip{background:rgba(76,141,255,.07);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.s{border-radius:6px}
+header b{font-weight:600;letter-spacing:.3em}
+.ver{background:rgba(76,141,255,.12)}
+#alertBanner,#safeBanner{border-radius:8px;letter-spacing:.25em;font-size:.8rem}
+.log{border-radius:12px}
+/* landing polish */
+.bt{display:none}
+#boot .hero h1{font-weight:300;text-shadow:none}
+.stats{border-radius:10px;overflow:hidden}.stats b{font-weight:300;text-shadow:none}
+.cards article,.qin,.qout,.sosc{border-radius:12px}
+/* voice pack */
+.vpack{margin-top:14px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:rgba(7,17,31,.6)}
+.vp-h{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:.7rem;letter-spacing:.18em;color:var(--c2);margin-bottom:10px}
+.vp-h span{color:var(--mute);letter-spacing:.03em}
+.vp-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:8px}
+.vp-row label{display:block;font-size:.66rem;letter-spacing:.12em;color:var(--mute)}
+.vp-row select,.vp-row input{margin:4px 0 0}
+.vp-row input[type=range]{padding:0;height:24px;accent-color:var(--c);background:none;border:0}
+/* KPIs, history, toast, demo */
+.kpi{border:1px solid var(--line);border-radius:99px;padding:3px 12px;font-size:.66rem!important;letter-spacing:.14em;margin-right:8px}
+.kpi b{color:var(--c2);margin-left:8px;letter-spacing:0;font-weight:700}
+.hist{margin-top:14px}.hist h2{margin-bottom:8px}
+.hit{display:flex;gap:8px;align-items:center;width:100%;text-align:left;font:inherit;font-size:.76rem;color:var(--mute);padding:7px 10px;border:1px solid var(--line);border-radius:6px;margin-bottom:6px;cursor:pointer;background:none}
+.hit i{width:8px;height:8px;border-radius:50%;flex:none}.hit span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hit:hover{border-color:var(--c);color:var(--ink)}
+#toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,16px);z-index:60;background:#0b1626;border:1px solid var(--c);color:var(--ink);padding:10px 20px;border-radius:8px;font-size:.82rem;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+body.demo #log,body.demo .vpack{display:none}
+body.demo #verdict{font-size:1.3rem}body.demo #finds li{font-size:1rem}
+@media print{body{background:#fff!important;color:#000}#boot,#app>header,#app>.panel:not(#out),#app>.center,#app>footer,.sos,.hist,#aur,#alertFx,#alertBanner,#safeBanner,#scanline{display:none!important}#app{display:block!important}#out{border:0;box-shadow:none;background:#fff}#out *{color:#000!important}}
+
+/* v3 rings */
+@keyframes sway{0%,100%{transform:rotateY(-28deg) rotateX(7deg)}50%{transform:rotateY(28deg) rotateX(-7deg)}}
+@keyframes hudspin{to{transform:rotate(360deg)}}
+@keyframes hudglow{50%{opacity:.55}}
+.orb,.ho{display:none!important}
+#reactor .ring{display:none}
+.jrv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.jrv g.jg{transform-origin:200px 200px;transform-box:view-box;will-change:transform}
+.jr1{animation:hudspin 90s linear infinite}
+.jr2{animation:hudspin 36s linear infinite reverse}
+.jr3{animation:hudspin 20s linear infinite}
+.jr4{animation:hudspin 14s linear infinite reverse}
+.jr5{animation:hudspin 6s linear infinite}
+.jrv .st{stroke:var(--c)}.jrv .st2{stroke:var(--c2)}.jrv .fl{fill:var(--c2)}
+.rsweep{position:absolute;inset:15%;border-radius:50%;pointer-events:none;background:conic-gradient(from 0deg,color-mix(in srgb,var(--c) 38%,transparent),transparent 22%,transparent);animation:hudspin 5s linear infinite;will-change:transform;-webkit-mask:radial-gradient(circle,transparent 52%,#000 53%);mask:radial-gradient(circle,transparent 52%,#000 53%)}
+.coin{animation:sway 7s ease-in-out infinite!important}
+#logo{perspective:650px}
+.face svg{filter:drop-shadow(0 0 12px color-mix(in srgb,var(--c) 70%,transparent))}
+#logo:before{animation:hudglow 3.6s ease-in-out infinite}
+/* landing */
+.hcore{inset:33%;perspective:600px;filter:none}
+.hcore .coin{position:relative;width:100%;height:100%;transform-style:preserve-3d}
+.hcore .face svg{width:100%;height:100%}
+.hud .jrv{z-index:0}.hud .hcore{z-index:2}
+body.alert .jrv .jg{animation-duration:inherit}
+
+/* ===== v3.1 : all side circles rotate ===== */
+#reactor .ring.show{display:inline}
+#reactor .ring.rr1{animation:hudspin 26s linear infinite!important}
+#reactor .ring.rr2{animation:hudspin 16s linear infinite reverse!important}
+.hud .hr.h2{animation:hudspin 30s linear infinite reverse}
+.hud .hr.h4{border:2px solid transparent;border-top-color:var(--c);border-bottom-color:color-mix(in srgb,var(--c) 35%,transparent);animation:hudspin 18s linear infinite}
+.hud:before{animation:hudspin 45s linear infinite!important;will-change:transform}
+
+/* ===== v4 : buttery-smooth + police locator ===== */
+.rsweep{display:none}
+.rsw{animation:hudspin 5s linear infinite}
+.sp1{animation:hudspin 26s linear infinite}.sp2{animation:hudspin 16s linear infinite reverse}
+.jrv{will-change:transform;backface-visibility:hidden}
+.face svg{filter:none!important}
+body.alert #logo,body.safe #logo{filter:none}
+body.alert .face svg{filter:hue-rotate(165deg) saturate(1.5)!important}
+body.safe .face svg{filter:hue-rotate(300deg)!important}
+.talk #reactor{animation:cp 1s ease-in-out infinite}#core.speak{animation:none}
+.hud,.hud:before,.hcore,.sweep,#aur,.coin,.q,.hr,.stage,.app.on .stage{will-change:auto}
+.hud:before{will-change:transform}
+#aur{animation:none}.tag{animation:none}.hcore{animation:none}.hud{transition:none}
+.q2,.q3{display:none}
+.hr.h4{box-shadow:none;background:radial-gradient(circle,rgba(76,141,255,.14),transparent 70%)}
+.meter,.qm,#bar{contain:paint}
+#boot{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.paused *,.paused *:before,.paused *:after,.hud.off *,.hud.off:before{animation-play-state:paused!important}
+.lite .rsw,.lite .q,.lite #aur,.lite .hud:before,.lite .radar{display:none}
+@media(hover:none){.cards article:hover,.sosc:hover{transform:none}}
+#stnM{position:fixed;inset:0;z-index:70;display:none;align-items:center;justify-content:center;padding:14px;background:rgba(3,8,16,.82)}
+#stnM.on{display:flex;animation:fadein .25s var(--e)}
+.sbox{position:relative;width:min(560px,100%);max-height:92vh;overflow-y:auto;background:#0b1626;border:1px solid var(--line);border-radius:14px;padding:20px;color:var(--ink)}
+.sbox h3{margin:0 0 10px;font-size:.76rem;letter-spacing:.22em;color:var(--c2)}
+#stnX{position:absolute;top:8px;right:12px;background:none;border:0;color:var(--mute);font-size:1.3rem;cursor:pointer;padding:6px}
+.ss{font-size:.86rem;color:var(--mute);min-height:20px}
+.sn{font-size:1.25rem;font-weight:600;margin:8px 0 2px;color:#fff}.sd{color:var(--ok);font-weight:700}
+.sx{font-size:.84rem;color:var(--mute);margin:2px 0}
+#stnMap iframe{width:100%;height:240px;border:0;border-radius:10px;margin-top:12px;background:#07111f}
+.sl{display:flex;justify-content:space-between;gap:8px;font-size:.8rem;padding:6px 0;border-top:1px solid var(--line)}
+.sl:first-of-type{margin-top:10px}
+.sbox .btns{margin-top:12px}
+
+/* ===== v5 : corporate look + always-visible rotating rings ===== */
+:root{--bg:#0a101c;--p:#111a2b;--line:#23324d;--c:#4c8dff;--c2:#a9c4f5;--ink:#e9eef7;--mute:#8d9bb2;--ok:#2fbf84;--warn:#e8a33d;--bad:#e5484d}
+body{background:linear-gradient(180deg,#0d1627 0%,#0a101c 55%);font-family:Inter,"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+body.alert{background:linear-gradient(180deg,#2a0d12,#0d0507)}body.safe{background:linear-gradient(180deg,#0b2a1e,#050e0a)}
+.gridbg{opacity:.25}#aur{display:none}
+*{text-shadow:none!important}
+.lnav{background:rgba(10,16,28,.96);border-bottom:1px solid var(--line)}
+.lbrand,header b{letter-spacing:.14em;font-weight:600;font-size:.9rem;color:#fff}
+.lchip,.ver,.kpi{letter-spacing:.06em;font-size:.7rem}
+.eyebrow{letter-spacing:.12em;font-size:.74rem;font-weight:600;color:var(--c);text-transform:uppercase}
+#boot .hero h1{font-weight:700;letter-spacing:.02em;font-size:clamp(2rem,5.4vw,3.8rem);line-height:1.1;color:#fff}
+.lead{font-size:1.08rem;color:#c4cfe0;max-width:540px}
+.jline{font:.9rem Inter,"Segoe UI",system-ui,sans-serif;color:var(--c2)}.jline:before{content:none}
+.jline{display:flex;gap:6px;align-items:center}.cur{display:none}
+#boot #init{border-radius:8px;letter-spacing:.06em;font-weight:600;box-shadow:0 6px 20px -6px rgba(76,141,255,.6);background:var(--c);color:#fff}
+#boot #init:hover{background:#6aa2ff;color:#fff;transform:none}
+.ghost{border-radius:8px;letter-spacing:.06em;font-weight:600}
+.mini,.btn{letter-spacing:.05em;border-radius:8px}
+.mini.solid,#scan{color:#fff}
+.stats,.cards article,.sosc,.qin,.qout,.steps div{border-radius:12px}
+.stats{background:none;border:0;gap:12px}.stats div{border:1px solid var(--line);border-radius:12px;background:var(--p)}
+.stats b{font-weight:700;color:#fff;font-size:1.9rem}.stats small{letter-spacing:.08em}
+.feat h3{letter-spacing:.12em;font-size:.8rem;color:var(--c2)}
+.cards article,.sosc,.qin,.qout{background:var(--p);box-shadow:0 8px 24px -14px rgba(0,0,0,.8)}
+.cards h4{font-weight:600;letter-spacing:0}.sosc b{font-weight:700;color:#fff}
+.bt,.tag,.hud:before,.q{display:none}
+.panel{background:var(--p);box-shadow:0 10px 30px -18px rgba(0,0,0,.9);border-radius:14px}
+h2{letter-spacing:.12em;color:var(--c2)}
+#state{letter-spacing:.2em;font-weight:600}
+#bootLog,.log{font-family:Consolas,Menlo,monospace}
+#alertBanner,#safeBanner{letter-spacing:.12em}
+.tab.on{color:#fff}
+/* rings: clearly visible rotation, immune to reduced-motion / lite mode */
+.jr1{animation:hudspin 40s linear infinite}.jr2{animation:hudspin 24s linear infinite reverse}
+.jr3{animation:hudspin 14s linear infinite}.jr4{animation:hudspin 9s linear infinite reverse}.jr5{animation:hudspin 5s linear infinite}
+.rsw{animation:hudspin 6s linear infinite}.sp1{animation:hudspin 18s linear infinite}.sp2{animation:hudspin 11s linear infinite reverse}
+.hud .hr.h2{animation:hudspin 20s linear infinite reverse}.hud .hr.h4{animation:hudspin 12s linear infinite}
+.jrv .st{stroke:var(--c)}.jr3 circle,.jr5 circle,.sp1 circle{opacity:1!important}
+.lite .rsw{display:block}
+@media(prefers-reduced-motion:reduce){.jrv,.hr{animation-duration:inherit!important;animation-iteration-count:infinite!important}
+.jr1{animation-duration:40s!important}.jr2{animation-duration:24s!important}.jr3{animation-duration:14s!important}.jr4{animation-duration:9s!important}.jr5{animation-duration:5s!important}.rsw{animation-duration:6s!important}.sp1{animation-duration:18s!important}.sp2{animation-duration:11s!important}.h2{animation-duration:20s!important}.h4{animation-duration:12s!important}}
+.hud.off *,.hud.off:before{animation-play-state:running!important}
+/* ===== v10 : cheaper rendering on low-end phones (lite mode only) ===== */
+.lite body.alert .stage,.lite body.safe .stage{filter:none!important}
+.lite #bg,.lite body.alert #bg,.lite body.safe #bg{filter:none!important}
+.lite .panel{box-shadow:none!important}
+.lite .stage{transition:none}
+html{-webkit-text-size-adjust:100%}
+button{touch-action:manipulation}
+</style>
+<style>
+/* ===== Cyber Crime Report form ===== */
+#report .rp-note{background:rgba(255,184,61,.08);border:1px solid var(--warn);border-radius:8px;padding:12px 14px;font-size:.84rem;line-height:1.6;margin:0 0 16px;color:var(--ink)}
+#report .rp-note b{color:var(--warn)}
+.rp-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;align-items:start}
+.rp-card{background:var(--p);border:1px solid var(--line);border-radius:12px;padding:18px}
+.rp-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.rp-grid .full{grid-column:1/-1}
+.rp-card label.rp-l{display:block;font-size:.7rem;letter-spacing:.14em;color:var(--c);margin:4px 0 5px}
+.rp-card label.rp-l i{color:var(--bad);font-style:normal}
+.rp-card textarea{height:110px;resize:vertical}
+.rp-chks{display:flex;flex-wrap:wrap;gap:8px 16px;margin:2px 0 10px}
+.rp-chk{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--ink);cursor:pointer}
+.rp-chk input{width:auto;margin:0}
+.rp-err{color:var(--bad);font-size:.8rem;min-height:18px;margin:4px 0}
+.rp-out pre{white-space:pre-wrap;word-break:break-word;font:.78rem/1.6 Consolas,monospace;color:var(--c2);background:#06101c;border:1px solid var(--line);border-radius:8px;padding:12px;max-height:360px;overflow:auto;margin:0 0 10px}
+.rp-idle{color:var(--mute);font-size:.88rem;line-height:1.6}
+.rp-steps{margin:12px 0 0;padding:0 0 0 18px;font-size:.82rem;line-height:1.7;color:var(--mute)}
+.rp-steps b{color:var(--c2)}
+.rp-btns{display:flex;flex-wrap:wrap;gap:8px}
+a.mini{text-decoration:none;display:inline-block}
+.mini.danger{border-color:var(--bad);color:#fff;background:rgba(255,77,94,.22)}
+.mini.danger:hover{background:var(--bad);color:#fff}
+@media(max-width:900px){.rp-wrap{grid-template-columns:1fr}}
+@media(max-width:520px){.rp-grid{grid-template-columns:1fr}}
+/* v9: rotating rings must not create sideways scroll on phones */
+html,body{max-width:100%}
+body{overflow-x:clip}
+.app{overflow-x:clip}
+.stage{overflow:clip}
+</style>
+<style>
+/* ===== launch polish ===== */
+.thr{display:flex;flex-wrap:wrap;gap:10px}
+.thr span{border:1px solid var(--line);background:var(--p);border-radius:999px;padding:9px 16px;font-size:.84rem;color:var(--c2);transition:.25s}
+.thr span:hover{border-color:var(--c);box-shadow:0 0 18px rgba(76,141,255,.35)}
+.cband{text-align:center;background:linear-gradient(135deg,rgba(76,141,255,.14),rgba(10,22,38,.9));border:1px solid var(--line);border-radius:16px;padding:40px 22px;margin-top:56px;margin-bottom:0}
+.cband h3{font-size:1.1rem;letter-spacing:.2em}
+.cband p{color:var(--ink);opacity:.85;max-width:520px;margin:0 auto 18px;line-height:1.6}
+</style>
+</head>
+<body>
+<div id="alertFx"></div><div id="alertBanner">⚠ SCAM ALERT ⚠</div><div id="safeBanner">✔ MESSAGE SAFE ✔</div>
+<div id="shutter" aria-hidden="true"><div class="vl"><svg viewBox="0 0 100 100"><path d="M50 6L90 22V52C90 76 72 90 50 96C28 90 10 76 10 52V22Z" fill="rgba(76,141,255,.12)" stroke="#4c8dff" stroke-width="5"/><path d="M32 52l14 14 24-28" fill="none" stroke="#a9c4f5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>INITIALIZING</span></div></div>
+<div id="boot">
+<div class="gridbg"></div><div class="sweep"></div>
+<div id="prog"></div><button id="toTop" title="Back to top">&#8593;</button>
+<nav class="lnav"><div class="lbw"><div class="lbrand"><span class="nl"><i class="nr"></i><svg viewBox="0 0 100 100"><path d="M50 6L90 22V52C90 76 72 90 50 96C28 90 10 76 10 52V22Z" fill="rgba(76,141,255,.12)" stroke="#4c8dff" stroke-width="5"/><path d="M32 52l14 14 24-28" fill="none" stroke="#a9c4f5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>CYBERSHIELD <i>2077</i></span></div>
+<div class="lrot"><span class="ldot"></span><div class="tick"><span>SMS SHIELD</span><span>EMAIL FORENSICS</span><span>VOICE CONTROL</span><span>EMERGENCY SOS</span></div></div></div>
+<div class="links" id="links"><a data-go="feat" data-hi="फ़ीचर्स">FEATURES</a><a data-go="qscan" data-hi="तुरंत जाँच">QUICK SCAN</a><a data-go="how" data-hi="कैसे काम करता है">HOW IT WORKS</a><a data-go="sos" data-hi="आपातकाल">SOS</a><a data-go="report" data-hi="रिपोर्ट करें">REPORT</a></div>
+<div class="lact"><span class="lchip"><i class="dot"></i>LIVE</span><button class="mini" id="lLang">हिंदी</button><button class="mini solid" id="lLaunch" data-hi="शुरू करें">LAUNCH</button><button class="mini" id="burger" aria-label="Menu">&#9776;</button></div></nav>
+<section class="hero">
+ <div class="htxt">
+  <div class="eyebrow">FREE &bull; PRIVATE &bull; ENGLISH &amp; हिंदी</div>
+  <h1 id="bootName"></h1>
+  <p class="lead" id="bootTag"></p>
+  <p class="jline">&gt; <span id="jtxt"></span><b class="cur"></b></p>
+  <div class="cta"><button id="init" data-hi="साइबरशील्ड चालू करें">ACTIVATE CYBERSHIELD</button><a class="ghost" data-go="qscan" data-hi="लाइव डेमो आज़माएँ">TRY LIVE SCAN</a></div>
+  <small id="bootHint">No sign-up. Nothing is uploaded. Best on Chrome or Edge; voice starts after you click.</small>
+  <div id="bar"><div id="barf"></div></div>
+  <div id="bootLog"></div>
+ </div>
+ <div class="hud" id="hud"><i class="q q1"></i><i class="q q2"></i><i class="q q3"></i><i class="ho ho1"></i><i class="ho ho2"></i><i class="hr h2"></i><i class="hr h4"></i><div class="hcore"><svg viewBox="0 0 100 100"><path d="M50 6L90 22V52C90 76 72 90 50 96C28 90 10 76 10 52V22Z" fill="rgba(76,141,255,.12)" stroke="#4c8dff" stroke-width="5"/><path d="M32 52l14 14 24-28" fill="none" stroke="#a9c4f5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="tag t1">SMS</span><span class="tag t2">EMAIL</span><span class="tag t3">VOICE</span><span class="tag t4">SOS</span></div>
+</section>
+<section class="stats"><div><b data-n="rules">0</b><small>THREAT RULES</small></div><div><b data-n="2">0</b><small>LANGUAGES (EN / हिंदी)</small></div><div><b data-n="3">0</b><small>INPUT MODES</small></div><div><b data-n="1930">0</b><small>CYBER CRIME HELPLINE</small></div></section>
+<section class="feat" id="feat"><h3 data-hi="क्षमताएँ">CAPABILITIES</h3><div class="cards">
+<article><s class="bt a"></s><s class="bt b"></s><s class="bt c"></s><s class="bt d"></s><u>01</u><h4>Instant Scam Scan</h4><p>Paste any SMS or email. Risk score, verdict and plain-language findings in a second.</p></article>
+<article><s class="bt a"></s><s class="bt b"></s><s class="bt c"></s><s class="bt d"></s><u>02</u><h4>Voice Command</h4><p>Speak a message or say "scan", "read result", "call police". The assistant answers in English or Hindi.</p></article>
+<article><s class="bt a"></s><s class="bt b"></s><s class="bt c"></s><s class="bt d"></s><u>03</u><h4>Email Forensics</h4><p>Checks sender domain, subject and attachment names for phishing and malware tricks.</p></article>
+<article><s class="bt a"></s><s class="bt b"></s><s class="bt c"></s><s class="bt d"></s><u>04</u><h4>Emergency SOS</h4><p>One tap to call 1930 Cyber Crime, 112 Police, or find the nearest police station.</p></article></div></section>
+<section class="feat" id="qscan"><h3 data-hi="तुरंत जाँच (लाइव)">QUICK SCAN (LIVE)</h3><div class="qwrap">
+<div class="qin"><textarea id="qText" placeholder="Paste a suspicious SMS / WhatsApp message here... (Ctrl+Enter to scan)"></textarea>
+<div class="qbtns"><button class="mini solid" id="qScan" data-hi="अभी स्कैन करें">SCAN NOW</button><button class="mini" id="qClr" data-hi="साफ़ करें">CLEAR</button><button class="mini" id="qOpen" data-hi="पूरे कंसोल में खोलें">OPEN IN FULL CONSOLE</button></div>
+<div class="qs" id="qSamples"></div></div>
+<div class="qout" id="qOut"><div class="qidle" data-hi="इनपुट का इंतज़ार है। मैसेज पेस्ट करें और स्कैन दबाएँ।">Awaiting input. Paste a message and press SCAN NOW.</div></div></div></section>
+<section class="feat" id="how"><h3 data-hi="कैसे काम करता है">HOW IT WORKS</h3><div class="steps"><div><b>1</b>Paste or speak the suspicious message</div><div><b>2</b>CyberShield scans it against scam patterns</div><div><b>3</b>Get verdict, reasons and what to do next</div></div></section>
+<section class="feat" id="sos"><h3 data-hi="आपातकालीन सहायता">EMERGENCY HELP</h3><div class="soss">
+<a class="sosc" href="tel:1930"><b>1930</b><span data-hi="साइबर क्राइम हेल्पलाइन">CYBER CRIME HELPLINE</span></a>
+<a class="sosc" href="tel:112"><b>112</b><span data-hi="पुलिस आपातकाल">POLICE EMERGENCY</span></a>
+<a class="sosc" href="https://www.google.com/maps/search/police+station+near+me" target="_blank" rel="noopener"><b>&#128205;</b><span data-hi="नज़दीकी पुलिस स्टेशन">NEAREST POLICE STATION</span></a>
+<a class="sosc" href="https://cybercrime.gov.in" target="_blank" rel="noopener"><b>&#127760;</b><span data-hi="ऑनलाइन रिपोर्ट करें">REPORT AT CYBERCRIME.GOV.IN</span></a></div>
+<p class="rules" data-hi="सुनहरे नियम: OTP/PIN कभी साझा न करें • अनजान लिंक न खोलें • पैसे भेजने से पहले पुष्टि करें।">GOLDEN RULES: Never share OTP/PIN &bull; Don't open unknown links &bull; Verify before sending money.</p>
+<div class="cta" style="margin-top:18px"><button class="mini solid" data-go="report" data-hi="साइबर क्राइम की रिपोर्ट तैयार करें">REPORT A CYBER CRIME</button></div>
+</section>
+<section class="feat" id="threats"><h3 data-hi="जिन ख़तरों को हम पकड़ते हैं">THREATS WE CATCH</h3><div class="thr"><span data-hi="डिजिटल अरेस्ट कॉल">Digital arrest calls</span><span data-hi="UPI / बैंक फ्रॉड">UPI &amp; bank fraud</span><span data-hi="फ़र्ज़ी KYC अपडेट">Fake KYC updates</span><span data-hi="लॉटरी / इनाम स्कैम">Lottery &amp; prize scams</span><span data-hi="फ़र्ज़ी जॉब ऑफ़र">Fake job offers</span><span data-hi="फ़िशिंग लिंक">Phishing links</span><span data-hi="नकली ईमेल">Spoofed emails</span></div></section>
+<section class="feat" id="report"><h3 data-hi="साइबर क्राइम रिपोर्ट फ़ॉर्म">REPORT A CYBER CRIME</h3>
+<div class="rp-note"><b data-hi="ज़रूरी:">IMPORTANT:</b> <span data-hi="अगर पैसा कटा है तो तुरंत 1930 पर कॉल करें, पहले घंटे में रिपोर्ट करने से पैसा रुकने की संभावना ज़्यादा रहती है। यह फ़ॉर्म आपकी शिकायत तैयार करता है; आधिकारिक फ़ाइलिंग सिर्फ़ cybercrime.gov.in पर होती है। आपका डेटा सिर्फ़ आपके ब्राउज़र में रहता है।">If money was debited, call 1930 immediately: reporting within the first hour gives the best chance of freezing the funds. This form prepares your complaint; official filing happens only on cybercrime.gov.in. Your data stays in your browser.</span></div>
+<div class="rp-wrap">
+<div class="rp-card">
+<div class="rp-grid">
+<div class="full"><label class="rp-l" for="rpType"><span data-hi="अपराध का प्रकार">CRIME TYPE</span> <i>*</i></label><select id="rpType"><option value="" data-hi="-- चुनें --">-- Select --</option><option value="UPI / Bank / Card fraud" data-hi="UPI / बैंक / कार्ड फ्रॉड">UPI / Bank / Card fraud</option><option value="Phishing (SMS / Email / WhatsApp link)" data-hi="फ़िशिंग (SMS / ईमेल / WhatsApp लिंक)">Phishing (SMS / Email / WhatsApp link)</option><option value="Fake job / Lottery / KYC scam" data-hi="फ़र्ज़ी जॉब / लॉटरी / KYC स्कैम">Fake job / Lottery / KYC scam</option><option value="Digital arrest / Fake officer call" data-hi="डिजिटल अरेस्ट / फ़र्ज़ी अफ़सर कॉल">Digital arrest / Fake officer call</option><option value="Investment / Crypto / Trading fraud" data-hi="निवेश / क्रिप्टो / ट्रेडिंग फ्रॉड">Investment / Crypto / Trading fraud</option><option value="Online shopping / Marketplace fraud" data-hi="ऑनलाइन शॉपिंग / मार्केटप्लेस फ्रॉड">Online shopping / Marketplace fraud</option><option value="Social media account hacked / Fake profile" data-hi="सोशल मीडिया हैक / फ़र्ज़ी प्रोफ़ाइल">Social media account hacked / Fake profile</option><option value="Sextortion / Blackmail / Harassment" data-hi="सेक्सटॉर्शन / ब्लैकमेल / उत्पीड़न">Sextortion / Blackmail / Harassment</option><option value="Identity theft / SIM swap" data-hi="पहचान की चोरी / SIM स्वैप">Identity theft / SIM swap</option><option value="Other cyber crime" data-hi="अन्य साइबर अपराध">Other cyber crime</option></select></div>
+<div><label class="rp-l" for="rpDate" data-hi="घटना की तारीख़ / समय">DATE / TIME OF INCIDENT</label><input id="rpDate" type="datetime-local"></div>
+<div><label class="rp-l" for="rpAmt" data-hi="गँवाई गई रकम (₹)">AMOUNT LOST (₹)</label><input id="rpAmt" type="number" min="0" step="1" inputmode="numeric" data-ph-en="0 if no money lost" data-ph-hi="पैसा नहीं गया तो 0"></div>
+<div><label class="rp-l" for="rpPay" data-hi="भुगतान का माध्यम / बैंक">PAYMENT MODE / BANK</label><input id="rpPay" type="text" maxlength="120" data-ph-en="e.g. UPI, SBI debit card" data-ph-hi="जैसे UPI, SBI डेबिट कार्ड"></div>
+<div><label class="rp-l" for="rpTxn" data-hi="ट्रांज़ैक्शन ID / UTR">TRANSACTION ID / UTR</label><input id="rpTxn" type="text" maxlength="60"></div>
+<div class="full"><label class="rp-l" for="rpSus" data-hi="आरोपी की जानकारी (फ़ोन / UPI ID / लिंक / ईमेल / हैंडल)">SUSPECT DETAILS (phone / UPI ID / link / email / handle)</label><input id="rpSus" type="text" maxlength="300"></div>
+<div class="full"><label class="rp-l" for="rpDesc"><span data-hi="क्या हुआ? (विस्तार से)">WHAT HAPPENED? (in detail)</span> <i>*</i></label><textarea id="rpDesc" maxlength="3000" data-ph-en="Describe step by step: how they contacted you, what they asked, what you did..." data-ph-hi="क्रम से बताएँ: उन्होंने कैसे संपर्क किया, क्या माँगा, आपने क्या किया..."></textarea></div>
+<div class="full"><div class="rp-btns" style="margin-bottom:8px"><button type="button" class="mini" id="rpUseScan" data-hi="आख़िरी स्कैन किया मैसेज जोड़ें">ADD LAST SCANNED MESSAGE</button></div></div>
+<div class="full"><span class="rp-l" style="display:block;font-size:.7rem;letter-spacing:.14em;color:var(--c);margin:4px 0 5px" data-hi="मेरे पास सबूत हैं">EVIDENCE I HAVE</span>
+<div class="rp-chks" id="rpEv">
+<label class="rp-chk"><input type="checkbox" value="Screenshots"><span data-hi="स्क्रीनशॉट">Screenshots</span></label>
+<label class="rp-chk"><input type="checkbox" value="Transaction receipt / bank statement"><span data-hi="ट्रांज़ैक्शन रसीद / स्टेटमेंट">Transaction receipt / statement</span></label>
+<label class="rp-chk"><input type="checkbox" value="Call / chat log"><span data-hi="कॉल / चैट लॉग">Call / chat log</span></label>
+<label class="rp-chk"><input type="checkbox" value="Suspicious link / URL"><span data-hi="संदिग्ध लिंक / URL">Suspicious link / URL</span></label>
+<label class="rp-chk"><input type="checkbox" value="Email with headers"><span data-hi="ईमेल (हेडर सहित)">Email with headers</span></label>
+</div></div>
+<div><label class="rp-l" for="rpName" data-hi="आपका नाम">YOUR NAME</label><input id="rpName" type="text" maxlength="80" autocomplete="name"></div>
+<div><label class="rp-l" for="rpMob" data-hi="मोबाइल नंबर">MOBILE NUMBER</label><input id="rpMob" type="tel" maxlength="14" inputmode="tel" autocomplete="tel"></div>
+<div class="full"><label class="rp-l" for="rpLoc" data-hi="राज्य / ज़िला">STATE / DISTRICT</label><input id="rpLoc" type="text" maxlength="100" autocomplete="off"></div>
+</div>
+<div class="rp-err" id="rpErr" role="alert"></div>
+<div class="rp-btns"><button type="button" class="mini solid" id="rpGen" data-hi="शिकायत तैयार करें">PREPARE COMPLAINT</button><button type="button" class="mini" id="rpClr" data-hi="साफ़ करें">CLEAR</button></div>
+</div>
+<div class="rp-card rp-out" id="rpOut">
+<div class="rp-idle" id="rpIdle" data-hi="फ़ॉर्म भरकर &quot;शिकायत तैयार करें&quot; दबाएँ। आपकी शिकायत का सारांश यहाँ दिखेगा, जिसे कॉपी, डाउनलोड या प्रिंट कर सकते हैं।">Fill the form and press PREPARE COMPLAINT. Your complaint summary appears here, ready to copy, download or print.</div>
+<div id="rpRes" style="display:none"><pre id="rpTxt"></pre>
+<div class="rp-btns"><button type="button" class="mini" id="rpCopy" data-hi="कॉपी करें">COPY</button><button type="button" class="mini" id="rpDl" data-hi="डाउनलोड (.txt)">DOWNLOAD (.txt)</button><button type="button" class="mini" id="rpPrint" data-hi="प्रिंट / PDF">PRINT / PDF</button></div>
+<div class="rp-btns" style="margin-top:8px"><button type="button" class="mini solid" id="rpPortal" data-hi="cybercrime.gov.in खोलें (सारांश कॉपी होगा)">OPEN cybercrime.gov.in (copies summary)</button></div></div>
+<div class="rp-err" id="rpMsg" style="color:var(--ok)"></div>
+<ol class="rp-steps">
+<li data-hi="पैसा कटा हो तो तुरंत 1930 पर कॉल करें और बैंक को बताकर कार्ड/खाता ब्लॉक कराएँ।">Call 1930 and your bank first, if money was debited.</li>
+<li data-hi="cybercrime.gov.in पर &quot;Report Cyber Crime&quot; चुनें और ऊपर का सारांश चिपकाएँ।">Open cybercrime.gov.in, choose &ldquo;Report Cyber Crime&rdquo;, paste this summary.</li>
+<li data-hi="स्क्रीनशॉट और रसीदें वहीं अपलोड करें, फिर मिली Acknowledgement Number संभालकर रखें।">Upload screenshots and receipts there, then keep your acknowledgement number safe.</li>
+</ol>
+<div class="rp-btns" style="margin-top:10px"><a class="mini danger" href="tel:1930" data-hi="&#9742; 1930 पर कॉल करें">&#9742; CALL 1930</a></div>
+</div>
+</div></section>
+<section class="feat cband"><h3 data-hi="आज ही सुरक्षित हों">PROTECT YOURSELF IN SECONDS</h3><p data-hi="कोई भी संदिग्ध मैसेज पेस्ट करें और तुरंत जानें कि वह सुरक्षित है या नहीं।">Paste any suspicious message and know in a second whether it is safe.</p><div class="cta" style="justify-content:center"><button class="mini solid" data-go="qscan" data-hi="अभी स्कैन करें">SCAN A MESSAGE</button><button class="mini" id="lLaunch2" data-hi="पूरा कंसोल खोलें">OPEN FULL CONSOLE</button></div></section>
+<footer class="lfoot"><span id="bootOwner"></span><span>Private by design: your text is analysed in your browser and never uploaded.</span><span style="flex-basis:100%;text-transform:none;letter-spacing:.02em;line-height:1.6">Map data &copy; OpenStreetMap contributors &bull; Overpass API &bull; Google Maps &bull; Helplines: 1930 / cybercrime.gov.in (Govt. of India) &bull; Detection is rule-based and may miss new scams or flag safe messages. When in doubt, verify with the sender through an official channel. &copy; 2026 CyberShield</span></footer>
+</div>
+
+<canvas id="bg"></canvas><div id="aur"></div>
+<div class="app" id="app">
+  <header><b id="hName"></b><em class="ver">LIVE</em><button class="btn" id="homeBtn" style="margin-right:12px">&#8962; HOME</button><span><i class="dot"></i>ONLINE &nbsp;<span id="clock"></span> &nbsp;|&nbsp; MIC: <span id="micStat">CHECKING</span> <span id="owner"></span></span></header>
+
+  <section class="panel">
+    <h2>INPUT</h2>
+    <div class="tabs"><button class="tab on" id="tMsg">MESSAGE / SMS</button><button class="tab" id="tMail">EMAIL</button></div>
+    <div id="fMail" style="display:none">
+      <input id="from" placeholder="Sender (e.g. support@sbi-secure.xyz)">
+      <input id="subj" placeholder="Subject">
+      <input id="att" placeholder="Attachment names, comma separated (optional)">
+    </div>
+    <textarea id="body" placeholder="Paste the message or email body here, or use Voice..."></textarea>
+    <div class="btns">
+      <button class="btn" id="scan">SCAN</button>
+      <button class="btn" id="mic">VOICE INPUT</button>
+      <button class="btn" id="read">READ RESULT</button>
+      <button class="btn" id="clr">CLEAR</button>
+    </div>
+    <div class="btns" style="margin-top:8px">
+      <select id="lang" style="width:auto;margin:0"><option value="en-IN">Mic: English</option><option value="hi-IN">Mic: Hindi / Hinglish</option></select>
+      <button class="btn" id="mute">VOICE: ON</button>
+      <button class="btn" id="genBtn">VOICE: FEMALE / महिला</button>
+      <button class="btn" id="amb">SOUND FX: ON</button>
+      <button class="btn" id="langBtn">LANGUAGE: EN</button>
+      <select id="voiceSel" hidden></select>
+      <select id="alertSnd" style="width:auto;margin:0"><option value="police">Alert: Police</option><option value="klaxon">Alert: Klaxon</option><option value="both">Alert: Klaxon + Police</option></select>
+    </div>
+    <div class="vpack" id="vpack">
+ <div class="vp-h"><b>VOICE PACK</b><span id="vpInfo">loading voices...</span></div>
+ <div class="vp-row">
+  <label>VOICE GENDER<select id="vpGender"><option value="female">Female / महिला</option><option value="male">Male / पुरुष</option></select></label>
+  <label>ENGLISH VOICE<select id="vpEn"></select></label>
+  <label>HINDI VOICE<select id="vpHi"></select></label>
+  <label>PRESET<select id="vpPreset"><option value="pro">Professional</option><option value="deep">Deep voice</option><option value="calm">Calm and slow</option><option value="fast">Quick</option></select></label>
+ </div>
+ <div class="vp-row">
+  <label>SPEED<input type="range" id="vpRate" min="0.7" max="1.3" step="0.05" value="0.98"></label>
+  <label>PITCH<input type="range" id="vpPitch" min="0.7" max="1.3" step="0.05" value="1"></label>
+ </div>
+ <div class="btns"><button class="btn" id="vpTestEn">TEST ENGLISH</button><button class="btn" id="vpTestHi">TEST हिंदी</button></div>
+</div>
+<div class="samples" id="samples"></div>
+  </section>
+
+  <section class="center">
+    <div class="stage"><svg id="reactor" viewBox="0 0 400 400">
+      <defs><radialGradient id="g"><stop offset="0" stop-color="#fff"/><stop offset=".35" style="stop-color:var(--c2)"/><stop offset="1" style="stop-color:var(--line)" stop-opacity="0"/></radialGradient></defs>
+      <g class="ring r3"><circle cx="200" cy="200" r="190" fill="none" style="stroke:var(--line)" stroke-width="2" stroke-dasharray="2 8"/></g>
+      <g class="ring r1"><circle cx="200" cy="200" r="165" fill="none" style="stroke:var(--c)" stroke-width="3" stroke-dasharray="90 30 10 30" opacity=".85"/></g>
+      <g class="ring r2"><circle cx="200" cy="200" r="132" fill="none" style="stroke:var(--c)" stroke-width="1.5" stroke-dasharray="4 6" opacity=".8"/><circle cx="200" cy="200" r="112" fill="none" style="stroke:var(--c2)" stroke-width="6" stroke-dasharray="40 20" opacity=".6"/></g>
+      <g class="ring r2"><defs><path id="tp" d="M50,200 a150,150 0 1,1 300,0 a150,150 0 1,1 -300,0"/></defs>
+        <text font-size="11" style="fill:var(--c2)" opacity=".8" font-family="Consolas,monospace"><textPath href="#tp" textLength="930" lengthAdjust="spacing">CYBERSHIELD 2077 • AI SCAM SHIELD • SMS + EMAIL PROTECTION • </textPath></text></g>
+      <g id="core"><circle cx="200" cy="200" r="86" fill="url(#g)" opacity=".7"/></g>
+    </svg>
+    <div id="logo"><div class="coin"><div class="face f"></div><div class="face b"></div></div></div><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i></div>
+    <div id="state">STANDBY</div>
+    <div id="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div id="subtitle"></div>
+  </section>
+
+  <section class="panel" id="out">
+    <div id="scanline"></div>
+    <h2>ANALYSIS</h2>
+    <div id="idle" style="color:var(--mute);font-size:.88rem">Awaiting input.</div>
+    <div id="res" style="display:none">
+      <p id="verdict"></p><div id="pct"></div>
+      <div class="meter"><div id="fill"></div></div>
+      <h2 style="margin-top:6px">FINDINGS</h2>
+      <ul id="finds"></ul>
+      <div class="tip" id="tip"></div>
+    </div>
+    <div class="sos">
+      <h2>EMERGENCY / REPORT</h2>
+      <div class="btns">
+        <a class="btn" href="tel:1930">&#9742; CALL 1930 CYBER CRIME</a>
+        <a class="btn" href="tel:112">&#9742; CALL 112 POLICE</a>
+        <a class="btn" id="stn" href="https://www.google.com/maps/search/police+station+near+me" target="_blank" rel="noopener">&#128205; NEAREST POLICE STATION</a>
+        <a class="btn" id="localStn" style="display:none"></a>
+      </div>
+      <small>Phone call buttons work on a mobile phone. On a laptop, dial the number from your phone. Map needs internet.</small>
+    </div>
+  </section>
+
+  <section class="panel log" id="log"></section>
+  <footer id="foot"></footer><footer style="grid-column:1/-1;text-align:center;color:var(--mute);font-size:.68rem;letter-spacing:.02em;padding:0 10px 14px;line-height:1.6">Map data &copy; OpenStreetMap contributors &bull; Overpass API &bull; Google Maps &bull; Helplines: 1930 / cybercrime.gov.in (Govt. of India)</footer>
+</div>
+
+<script>
+/* safety shims: browsers / in-app webviews without speech or audio no longer crash the page */
+(function(){if(!("speechSynthesis" in window)){window.speechSynthesis={getVoices:function(){return[]},cancel:function(){},speak:function(){},resume:function(){},speaking:false,pending:false}}
+if(!("SpeechSynthesisUtterance" in window)){window.SpeechSynthesisUtterance=function(t){this.text=t}}})();
+/* ======== EDIT THESE ======== */
+const BRAND="CYBERSHIELD 2077", TAG="Stop scams before they reach your wallet. Paste any suspicious SMS, WhatsApp message or email and get an instant verdict with clear next steps.", OWNER="";
+/* Put your LOCAL police station name + phone here (optional). The button appears only if phone is filled. */
+const LOCAL_STATION={name:"",phone:""};
+const MAPS_URL="https://www.google.com/maps/search/police+station+near+me";
+let curLang="en",hiVoice=null,lastReportHi="",curState="STANDBY";
+/* ---- voice gender: "female" | "male". Hindi lines are written in masculine form; G() converts them for the female voice ---- */
+let curGender=(function(){try{return localStorage.getItem("cs_gender")||"female"}catch(e){return"female"}})();
+function G(s){if(curGender!=="female"||!s)return s;const E="(?![\\u0900-\\u097F])";
+ return String(s)
+  .replace(/बनाया गया/g,"बनाई गई")
+  .replace(/सुन नहीं पाया/g,"सुन नहीं पाई")
+  .replace(/रहा हूँ/g,"रही हूँ").replace(/रहा हूं/g,"रही हूं")
+  .replace(/ता हूँ/g,"ती हूँ").replace(/ता हूं/g,"ती हूं")
+  .replace(new RegExp("ूँगा"+E,"g"),"ूँगी").replace(new RegExp("ूंगा"+E,"g"),"ूंगी")}
+const UIHIF={"LISTENING":"सुन रही है","SPEAKING":"बोल रही है"};
+const HIF={
+"Asks for an OTP, PIN or password. Real banks never do.":"OTP, PIN या पासवर्ड माँगा जा रहा है। असली बैंक कभी नहीं माँगता।",
+"Uses a KYC, PAN or Aadhaar update as bait.":"KYC, PAN या आधार अपडेट का बहाना बनाया गया है।",
+"Threatens to block or suspend your account.":"खाता बंद या ब्लॉक करने की धमकी दी जा रही है।",
+"Creates false urgency.":"झूठी जल्दबाज़ी पैदा की जा रही है।",
+"Claims you won a lottery or prize.":"लॉटरी या इनाम जीतने का झूठा दावा किया गया है।",
+"Dangles a large sum of money.":"बड़ी रकम का लालच दिया जा रहा है।",
+"Asks you to send money or pay a fee.":"पैसे भेजने या फीस जमा करने को कहा जा रहा है।",
+"Contains a shortened or suspicious link.":"छोटा किया हुआ या संदिग्ध लिंक मिला।",
+"Contains a link. Verify before opening.":"संदेश में लिंक है। खोलने से पहले जाँच लें।",
+"Pushes you to click a link.":"लिंक पर क्लिक करने के लिए दबाव बनाया जा रहा है।",
+"Looks like a work-from-home job scam.":"यह घर बैठे कमाई वाला जॉब स्कैम लगता है।",
+"Impersonates a known brand and asks you to verify.":"किसी जानी-मानी कंपनी का नाम लेकर वेरिफाई करने को कहा जा रहा है।",
+"Offers a refund, cashback or reward.":"रिफंड, कैशबैक या रिवॉर्ड का लालच दिया गया है।",
+"Generic greeting. Real companies use your name.":"सामान्य संबोधन। असली कंपनियाँ आपका नाम लेती हैं।",
+"Shouting in capitals or excessive exclamation marks.":"बड़े अक्षरों या बहुत सारे विस्मयादिबोधक चिह्नों से डराने की कोशिश।",
+"Asks for wire transfer, gift cards or crypto: classic CEO / payment fraud.":"वायर ट्रांसफर, गिफ्ट कार्ड या क्रिप्टो माँगा गया है: यह CEO/पेमेंट फ्रॉड जैसा है।",
+"Secrecy plus urgent reply request, typical of boss-impersonation fraud.":"गोपनीयता और जल्दी जवाब की माँग, बॉस बनकर की जाने वाली ठगी जैसी।",
+"Inheritance / beneficiary story, a known advance-fee scam.":"विरासत/लाभार्थी की कहानी, यह जानी-पहचानी एडवांस-फीस ठगी है।",
+"Fake security alert asking you to verify your account.":"नकली सुरक्षा अलर्ट जो अकाउंट वेरिफाई करने को कहता है।",
+"Invoice or payment-failure bait.":"इनवॉइस या पेमेंट फेल होने का झाँसा।",
+"Subject line uses pressure or alert words.":"सब्जेक्ट में डराने या दबाव वाले शब्द हैं।",
+"Sender address looks incomplete or hidden.":"भेजने वाले का पता अधूरा या छिपा हुआ लगता है।",
+"Company-style message sent from a free email address.":"कंपनी जैसा संदेश मुफ़्त ईमेल पते से भेजा गया है।",
+"Sender domain uses digits to mimic a real brand (like paypa1, amaz0n).":"भेजने वाले का डोमेन असली ब्रांड की नकल के लिए अंकों का उपयोग करता है (जैसे paypa1)।",
+"Sender domain is a lookalike: brand name plus extra words or hyphens.":"डोमेन नकली है: ब्रांड के नाम के साथ अतिरिक्त शब्द या हाइफ़न।",
+"Sender uses a domain ending commonly abused by scammers.":"ठग अक्सर ऐसे डोमेन अंत (.xyz, .top आदि) का उपयोग करते हैं।",
+"Risky attachment type (exe, zip, html, apk...). Do not open.":"खतरनाक अटैचमेंट (exe, zip, html, apk...)। इसे न खोलें।",
+"Looks like a routine OTP notification with no link.":"यह लिंक रहित सामान्य OTP सूचना लगती है।",
+"No suspicious patterns detected.":"कोई संदिग्ध संकेत नहीं मिला।"};
+
+Object.assign(HIF,{
+"Claims of police / CBI / customs action: a 'digital arrest' scam. Real agencies never demand money on a call.":"पुलिस/CBI/कस्टम की कार्रवाई का डर: यह 'डिजिटल अरेस्ट' ठगी है। असली एजेंसी कॉल पर पैसे नहीं माँगती।",
+"Fake parcel / courier delivery bait.":"नकली पार्सल/कूरियर डिलीवरी का झाँसा।",
+"Fake electricity bill disconnection threat.":"बिजली बिल कटने की नकली धमकी।",
+"Fake SIM / mobile number blocking threat.":"सिम/मोबाइल नंबर बंद होने की नकली धमकी।",
+"Asks you to install a remote-access or unknown app.":"रिमोट-एक्सेस या अनजान ऐप इंस्टॉल करने को कहा जा रहा है।",
+"Promises guaranteed returns: investment fraud.":"पक्के मुनाफ़े का झूठा वादा: निवेश ठगी।",
+"UPI trap: you never need a PIN or QR scan to receive money.":"UPI जाल: पैसे पाने के लिए PIN या QR स्कैन की ज़रूरत कभी नहीं होती।",
+"Link points to a raw IP address, not a real website.":"लिंक असली वेबसाइट पर नहीं, सीधे IP पते पर जाता है।",
+"Impersonates a government scheme or tax refund.":"सरकारी योजना या टैक्स रिफंड के नाम पर झाँसा।"});
+const tr=t=>curLang==="hi"&&HIF[t]?HIF[t]:t;
+const LABELHI={scam:"खतरा मिला",maybe:"संदिग्ध",safe:"कोई खतरा नहीं"};
+const TIPSHI={scam:"लिंक या अटैचमेंट न खोलें और कोई कोड साझा न करें। इसे डिलीट करें और cybercrime.gov.in पर या 1930 पर रिपोर्ट करें।",maybe:"अभी कोई कार्रवाई न करें। भेजने वाले से आधिकारिक नंबर या वेबसाइट के ज़रिए पुष्टि करें।",safe:"कोई खतरे का संकेत नहीं मिला, फिर भी सतर्क रहें। कोई भी टूल 100% सटीक नहीं होता।"};
+const UIHI={"INPUT":"इनपुट","ANALYSIS":"विश्लेषण","FINDINGS":"निष्कर्ष","EMERGENCY / REPORT":"आपातकाल / रिपोर्ट","MESSAGE / SMS":"मैसेज / SMS","EMAIL":"ईमेल","SCAN":"जाँचें","READ RESULT":"नतीजा सुनें","CLEAR":"साफ़ करें","VOICE INPUT":"बोलकर डालें","LISTENING...":"सुन रहा हूँ...","Awaiting input.":"इनपुट की प्रतीक्षा है।",
+"STANDBY":"स्टैंडबाय","LISTENING":"सुन रहा है","SCANNING":"जाँच जारी","SPEAKING":"बोल रहा है",
+"\u260E CALL 1930 CYBER CRIME":"\u260E 1930 साइबर क्राइम को कॉल","\u260E CALL 112 POLICE":"\u260E 112 पुलिस को कॉल","\u{1F4CD} NEAREST POLICE STATION":"\u{1F4CD} नज़दीकी पुलिस स्टेशन"};
+const T=k=>curLang==="hi"&&UIHI[k]?(curGender==="female"&&UIHIF[k]?UIHIF[k]:G(UIHI[k])):k;
+const SAYHI={
+["Hello. "+BRAND+" is online and ready. Give me a message or an email to check."]:"नमस्ते! साइबरशील्ड ऑनलाइन है। जाँच के लिए कोई मैसेज या ईमेल दीजिए।",
+["I am "+BRAND+", an assistant that detects scam messages and scam emails, and explains why."]:"मैं साइबरशील्ड हूँ। मैं स्कैम मैसेज और स्कैम ईमेल पहचानता हूँ और बताता हूँ कि क्यों।",
+"Email mode activated. Paste or dictate the email body.":"ईमेल मोड चालू। ईमेल का मैटर पेस्ट करें या बोलकर डालें।",
+"Message mode activated.":"मैसेज मोड चालू।",
+"There is no result yet.":"अभी कोई नतीजा नहीं है।",
+"Console cleared.":"कंसोल साफ़ हो गया।",
+"Always a pleasure.":"आपकी सेवा में हमेशा हाज़िर।",
+"Please give me a message to scan.":"कृपया जाँच के लिए कोई मैसेज दीजिए।",
+"Please give me a email to scan.":"कृपया जाँच के लिए कोई ईमेल दीजिए।",
+"Calling the cyber crime helpline, 1 9 3 0.":"साइबर क्राइम हेल्पलाइन, 1930 पर कॉल कर रहा हूँ।",
+"Calling police emergency, 1 1 2.":"पुलिस इमरजेंसी, 112 पर कॉल कर रहा हूँ।",
+"Opening the nearest police stations on the map.":"नक्शे पर नज़दीकी पुलिस स्टेशन खोल रहा हूँ।",
+"Please tap the Nearest Police Station button on the screen.":"कृपया स्क्रीन पर नज़दीकी पुलिस स्टेशन वाला बटन दबाइए।",
+"I could not hear that. Please try again.":"मैं सुन नहीं पाया। कृपया दोबारा बोलिए।",
+"You can say: switch to email, switch to message, scan, read result, call police, call cyber crime, nearest police station, stop, clear, help. Or just speak any message and I will scan it.":"आप कह सकते हैं: ईमेल मोड, मैसेज मोड, स्कैन, नतीजा सुनाओ, पुलिस को कॉल, साइबर क्राइम को कॉल, नज़दीकी पुलिस स्टेशन, रुको, साफ़ करो। या कोई भी मैसेज बोलिए, मैं उसकी जाँच करूँगा।"};
+const SPOKEN="Cyber shield twenty seventy seven"; /* only for the voice */
+/* ============================ */
+const $=id=>document.getElementById(id);
+$("bootName").textContent=BRAND;$("bootTag").textContent=TAG;$("bootOwner").textContent="Made by cyberpunk";$("hName").textContent=BRAND;$("foot").textContent=BRAND+"  •  AI SCAM SHIELD  •  MADE BY CYBERPUNK";$("owner").textContent=OWNER;
+
+/* ---------- rules ---------- */
+const COMMON=[
+ {re:/\botp\b|\bpin\b|\bcvv\b|password|ओटीपी|पासवर्ड|पिन/i,w:30,t:"Asks for an OTP, PIN or password. Real banks never do."},
+ {re:/kyc|pan\s*card|aadhaar|aadhar|केवाईसी|पैन कार्ड|आधार/i,w:25,t:"Uses a KYC, PAN or Aadhaar update as bait."},
+ {re:/(account|khata|card|mailbox).{0,25}(block|band|suspend|expire|freeze|deactivat|locked)|(block|band|suspend|expire|freeze|deactivat).{0,25}(account|khata|card|mailbox)|(खाता|अकाउंट).{0,25}(बंद|ब्लॉक)|(बंद|ब्लॉक).{0,25}(खाता|अकाउंट)/i,w:30,t:"Threatens to block or suspend your account."},
+ {re:/\burgent\b|\bimmediately\b|\bturant\b|\babhi\b|\bjaldi\b|last chance|within 24|\baaj hi\b|today only|act now|तुरंत|जल्दी|अभी|आज ही|अंतिम मौका/i,w:15,t:"Creates false urgency."},
+ {re:/lottery|jeet|winner|jackpot|prize|inaam|lucky draw|congratulations|badhai ho|लॉटरी|इनाम|जीत|बधाई|जैकपॉट/i,w:30,t:"Claims you won a lottery or prize."},
+ {re:/\d+\s*(lakh|crore|lac|million|लाख|करोड़)|₹\s?\d{5,}|rs\.?\s?\d{5,}|\$\s?\d{4,}/i,w:15,t:"Dangles a large sum of money."},
+ {re:/\b(send|bhej|transfer|pay|jama)\b.{0,20}(money|paise|\brs\b|₹|\bfee\b|charge)|processing fee|registration fee|पैसे भेज|फीस जमा|प्रोसेसिंग फीस|रजिस्ट्रेशन फीस/i,w:30,t:"Asks you to send money or pay a fee."},
+ {re:/\bbit\.ly|tinyurl\.com|goo\.gl|\bt\.co\/|cutt\.ly|\.xyz\b|\.top\b|\.click\b|\.tk\b|\.icu\b/i,w:25,t:"Contains a shortened or suspicious link."},
+ {re:/https?:\/\/|www\./i,w:10,t:"Contains a link. Verify before opening."},
+ {re:/click (here|below|link)|link pe click|link par click|neeche diye link|लिंक पर क्लिक|नीचे दिए (गए )?लिंक|यहाँ क्लिक|यहां क्लिक/i,w:15,t:"Pushes you to click a link."},
+ {re:/work from home|part[- ]time job|earn.{0,15}(daily|per day|rozana)|ghar baithe kamao|घर बैठे कमा|वर्क फ्रॉम होम/i,w:25,t:"Looks like a work-from-home job scam."},
+ {re:/\b(sbi|hdfc|icici|axis|paytm|phonepe|gpay|amazon|flipkart|paypal|microsoft|netflix)\b.{0,60}(link|click|verify|update|confirm|लिंक|क्लिक|वेरिफाई|अपडेट)/i,w:20,t:"Impersonates a known brand and asks you to verify."},
+ {re:/refund|cashback|reward point|gift card|रिफंड|कैशबैक|रिवॉर्ड/i,w:15,t:"Offers a refund, cashback or reward."},
+ {re:/dear (customer|user|sir\/madam|account holder|client)|प्रिय ग्राहक|आदरणीय ग्राहक/i,w:8,t:"Generic greeting. Real companies use your name."},
+ {re:/[A-Z]{6,}.{0,40}[A-Z]{6,}|!{2,}/,w:8,t:"Shouting in capitals or excessive exclamation marks."}
+];
+
+const NEWRULES=[
+ {re:/digital arrest|\bcbi\b|narcotics|money laundering|arrest warrant|\bwarrant\b.{0,30}(you|your|against)|डिजिटल अरेस्ट|सीबीआई|गिरफ्तार/i,w:35,t:"Claims of police / CBI / customs action: a 'digital arrest' scam. Real agencies never demand money on a call."},
+ {re:/(parcel|courier|package|fedex|dhl|india post).{0,50}(held|seized|customs|undelivered|address|fee|illegal)|(पार्सल|कूरियर).{0,40}(रोक|जब्त|फीस|कस्टम)/i,w:25,t:"Fake parcel / courier delivery bait."},
+ {re:/(electricity|power|bijli|bill).{0,40}(disconnect|cut off|tonight|katega)|बिजली.{0,30}(कट|कटे|बंद)/i,w:25,t:"Fake electricity bill disconnection threat."},
+ {re:/\btrai\b|sim.{0,20}(block|deactivat|disconnect)|mobile number.{0,25}(block|disconnect)|सिम.{0,20}(बंद|ब्लॉक)/i,w:25,t:"Fake SIM / mobile number blocking threat."},
+ {re:/anydesk|teamviewer|quicksupport|\.apk\b|install.{0,20}(app|apk)|screen ?share/i,w:30,t:"Asks you to install a remote-access or unknown app."},
+ {re:/(guaranteed|assured|fixed).{0,20}(return|profit)|double (your )?money|stock tips?|trading group|crypto.{0,20}(profit|invest)|पक्का मुनाफ़ा|दोगुना/i,w:25,t:"Promises guaranteed returns: investment fraud."},
+ {re:/collect request|scan (this )?qr|upi (pin|id).{0,30}(receive|accept|enter)|enter (your )?upi|to receive (money|payment)/i,w:30,t:"UPI trap: you never need a PIN or QR scan to receive money."},
+ {re:/https?:\/\/\d{1,3}(\.\d{1,3}){3}/i,w:25,t:"Link points to a raw IP address, not a real website."},
+ {re:/income tax|\bitr\b|refund.{0,20}approved|pm kisan|government (scheme|grant)|सरकारी योजना/i,w:15,t:"Impersonates a government scheme or tax refund."}
+];
+COMMON.push(...NEWRULES);
+const MAILONLY=[
+ {re:/wire transfer|gift cards?|itunes|bitcoin|crypto|usdt/i,w:25,t:"Asks for wire transfer, gift cards or crypto: classic CEO / payment fraud."},
+ {re:/confidential|keep (this )?(between us|secret)|are you available|reply (asap|urgently)/i,w:20,t:"Secrecy plus urgent reply request, typical of boss-impersonation fraud."},
+ {re:/beneficiary|inheritance|next of kin|unclaimed funds|dear friend/i,w:30,t:"Inheritance / beneficiary story, a known advance-fee scam."},
+ {re:/unusual (sign|log)[- ]?in|suspicious activity|security alert|verify your (account|identity|email)|confirm your (account|identity)|password (will )?expire/i,w:25,t:"Fake security alert asking you to verify your account."},
+ {re:/invoice|payment (failed|declined|overdue)|unpaid|overdue/i,w:12,t:"Invoice or payment-failure bait."}
+];
+const SUBJ=/urgent|action required|verify|suspend|invoice|payment|security alert|final notice|winner|refund|password/i;
+const FREE=/@(gmail|yahoo|outlook|hotmail|rediff|proton|mail)\./i;
+const BRANDS=/(sbi|hdfc|icici|axis|paypal|amazon|microsoft|apple|netflix|google|paytm|flipkart|bank|support|helpdesk|security)/i;
+const BADTLD=/\.(xyz|top|click|tk|icu|info|buzz|work|live|loan)$/i;
+const BADEXT=/\.(exe|scr|bat|js|vbs|apk|jar|html?|zip|rar|iso)\b/i;
+
+function analyze(mode,body,from,subj,att){
+ let s=0,f=[];
+ const add=(w,t)=>{s+=w;f.push(t)};
+ COMMON.forEach(r=>{if(r.re.test(body))add(r.w,r.t)});
+ if(mode==="mail"){
+  MAILONLY.forEach(r=>{if(r.re.test(body))add(r.w,r.t)});
+  if(subj&&SUBJ.test(subj))add(15,"Subject line uses pressure or alert words.");
+  const m=from.match(/@([^\s>]+)/);
+  if(from&&!m)add(10,"Sender address looks incomplete or hidden.");
+  if(m){
+   const d=m[1].toLowerCase();
+   if(FREE.test(from)&&BRANDS.test(from+" "+body.slice(0,200)))add(25,"Company-style message sent from a free email address.");
+   if(/\d/.test(d.split(".")[0])&&/[a-z]/.test(d.split(".")[0])&&BRANDS.test(d))add(25,"Sender domain uses digits to mimic a real brand (like paypa1, amaz0n).");
+   if(/-/.test(d.split(".")[0])&&BRANDS.test(d))add(25,"Sender domain is a lookalike: brand name plus extra words or hyphens.");
+   if(BADTLD.test(d))add(20,"Sender uses a domain ending commonly abused by scammers.");
+  }
+  if(att&&BADEXT.test(att))add(35,"Risky attachment type (exe, zip, html, apk...). Do not open.");
+ }
+ if(/do not share|never share|kisi se share na/i.test(body)&&!/click|link|http|block|kyc/i.test(body)&&mode==="msg"){s=Math.max(0,s-30);f.push("Looks like a routine OTP notification with no link.")}
+ s=Math.min(100,s);
+ return{score:s,level:s>=55?"scam":s>=25?"maybe":"safe",findings:f};
+}
+
+const SAMPLES={
+ msg:[
+  {b:"Dear customer, your SBI account will be blocked today. Update KYC immediately: http://bit.ly/sbi-kyc"},
+  {b:"Congratulations! You won 25 lakh in the lucky draw. Pay processing fee Rs 5000 to claim."},
+  {b:"Your OTP is 482913. Do not share it with anyone. - HDFC Bank"},
+  {b:"Hey, are we still meeting at 5 for cricket tomorrow?"},
+  {b:"प्रिय ग्राहक, आपका SBI खाता आज बंद हो जाएगा। KYC अपडेट के लिए तुरंत क्लिक करें: http://bit.ly/sbi-kyc"},
+  {b:"भाई, कल शाम 5 बजे क्रिकेट खेलने चलना है, ग्राउंड पर मिलते हैं।"}
+ ],
+ mail:[
+  {from:"security@paypa1-support.xyz",subj:"Action required: unusual sign-in detected",att:"",b:"Dear customer, we noticed suspicious activity. Verify your account within 24 hours or it will be suspended. Click here: http://paypa1-support.xyz/login"},
+  {from:"ceo.office@gmail.com",subj:"Urgent request",att:"",b:"Are you available? I need you to buy 5 gift cards for a client. Keep this confidential and reply urgently."},
+  {from:"accounts@vendor-billing.top",subj:"Invoice overdue",att:"Invoice_8842.zip",b:"Your payment is overdue. Please open the attached invoice and pay immediately."},
+  {from:"hr@mycompany.com",subj:"Team lunch on Friday",att:"",b:"Hi Rahul, we are planning a team lunch on Friday at 1 pm. Let me know if you can join."}
+ ]
+};
+
+/* ---------- audio ---------- */
+let ac,bus;
+/* one AudioContext, one master bus with a soft limiter: nothing reaches the speakers un-limited, so no crackle or clipping */
+function getAC(){
+ if(!ac){
+  ac=new(window.AudioContext||window.webkitAudioContext)({latencyHint:"playback"});
+  const lim=ac.createDynamicsCompressor();lim.threshold.value=-9;lim.knee.value=0;lim.ratio.value=20;lim.attack.value=.003;lim.release.value=.25;
+  bus=ac.createGain();bus.gain.value=.7;bus.connect(lim);lim.connect(ac.destination)}
+ if(ac.state==="suspended")ac.resume().catch(()=>{});
+ return ac}
+document.addEventListener("pointerdown",()=>{if(ac&&ac.state==="suspended")ac.resume().catch(()=>{})},{passive:true});
+document.addEventListener("visibilitychange",()=>{if(!ac)return;if(document.hidden)ac.suspend().catch(()=>{});else ac.resume().catch(()=>{})});
+/* click-free beep: 12 ms fade-in, smooth fade-out to true silence, nodes freed after use */
+function tone(fr,st,du,ty="sine",v=.14){const a=getAC(),t=a.currentTime+st,d=Math.max(.05,du),o=a.createOscillator(),g=a.createGain();
+ o.type=ty;o.frequency.value=fr;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.012);g.gain.exponentialRampToValueAtTime(.0001,t+d);g.gain.linearRampToValueAtTime(0,t+d+.03);
+ o.connect(g);g.connect(bus);o.start(t);o.stop(t+d+.06);o.onended=()=>{try{o.disconnect();g.disconnect()}catch(e){}}}
+const SFX0={boot(){tone(55,0,2,"triangle",.09);tone(82,.1,1.8,"triangle",.1);tone(131,.3,1.6,"triangle",.09);tone(196,1,1.2,"sine",.1);tone(392,1.3,.9,"sine",.06)},listen(){tone(900,0,.1);tone(1300,.1,.12)},
+ scan(){for(let i=0;i<8;i++)tone(500+i*90,i*.05,.08,"triangle",.08)},
+ police(){getAC();const t=ac.currentTime,o=ac.createOscillator(),g=ac.createGain(),f=ac.createBiquadFilter();
+  f.type="lowpass";f.frequency.value=3200;o.type="sawtooth";let b=t;
+  for(let i=0;i<2;i++){o.frequency.setValueAtTime(650,b);o.frequency.exponentialRampToValueAtTime(1450,b+.5);o.frequency.exponentialRampToValueAtTime(650,b+1);b+=1}
+  for(let i=0;i<7;i++){o.frequency.setValueAtTime(700,b);o.frequency.exponentialRampToValueAtTime(1500,b+.22);b+=.22}
+  g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(.18,t+.05);g.gain.setValueAtTime(.18,b-.05);g.gain.exponentialRampToValueAtTime(.0001,b+.1);
+  o.connect(f);f.connect(g);g.connect(bus);o.start(t);o.stop(b+.15)},
+ scam(){const m=$("alertSnd").value;if(m==="klaxon")this.klaxon();else if(m==="police")this.police();else{this.klaxon();setTimeout(()=>this.police(),3000)}},
+ klaxon(){getAC();const t=ac.currentTime,g=ac.createGain(),f=ac.createBiquadFilter();
+  f.type="lowpass";f.frequency.value=1100;f.Q.value=1.5;g.gain.value=0;f.connect(g);g.connect(bus);
+  [[175,"sawtooth"],[179,"sawtooth"],[87.5,"square"]].forEach(([fr,ty])=>{const o=ac.createOscillator(),og=ac.createGain();o.type=ty;og.gain.value=ty==="square"?.5:1;
+   for(let i=0;i<3;i++){const b=t+i*.95;o.frequency.setValueAtTime(fr,b);o.frequency.exponentialRampToValueAtTime(fr*.86,b+.7)}
+   o.connect(og);og.connect(f);o.start(t);o.stop(t+2.95)});
+  for(let i=0;i<3;i++){const b=t+i*.95;g.gain.setValueAtTime(.0001,b);g.gain.linearRampToValueAtTime(.26,b+.04);g.gain.setValueAtTime(.26,b+.6);g.gain.exponentialRampToValueAtTime(.0001,b+.78)}
+  tone(55,0,.9,"sine",.35)},
+ maybe(){tone(440,0,.2,"triangle");tone(440,.3,.2,"triangle")},safe(){tone(523,0,.15);tone(659,.15,.15);tone(784,.3,.35)}};
+const SFX={};Object.keys(SFX0).forEach(k=>{SFX[k]=function(){try{return SFX0[k].apply(SFX,arguments)}catch(e){}}});
+
+/* ---------- logo ---------- */
+const LOGO='<svg viewBox="0 0 120 150"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aeeff"/><stop offset="1" stop-color="#0a5f8a"/></linearGradient></defs>'+
+ '<path d="M60 4 L104 21 V56 C104 84 85 101 60 111 C35 101 16 84 16 56 V21 Z" fill="rgba(4,16,30,.95)" stroke="url(#lg)" stroke-width="4.5"/>'+
+ '<path d="M60 14 L94 27 V56 C94 78 79 91 60 99 C41 91 26 78 26 56 V27 Z" fill="none" stroke="#4c8dff" stroke-width="1" opacity=".55"/>'+
+ '<path d="M36 40 H50 V50 M84 40 H70 V50 M36 74 H48 M84 74 H72" stroke="#4c8dff" stroke-width="1.6" fill="none" class="blink"/>'+
+ '<circle cx="36" cy="40" r="2.6" fill="#a9c4f5"/><circle cx="84" cy="40" r="2.6" fill="#a9c4f5"/><circle cx="48" cy="74" r="2.6" fill="#a9c4f5"/><circle cx="72" cy="74" r="2.6" fill="#a9c4f5"/>'+
+ '<text x="60" y="68" text-anchor="middle" font-size="30" font-weight="800" fill="#fff" font-family="Segoe UI,Arial">CS</text>'+
+ '<text x="60" y="88" text-anchor="middle" font-size="11" letter-spacing="2.5" fill="#a9c4f5" font-family="Consolas,monospace">2077</text>'+
+ '<text x="60" y="128" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="1.8" fill="#e8fbff" font-family="Segoe UI,Arial">CYBERSHIELD</text>'+
+ '<line x1="22" y1="135" x2="98" y2="135" stroke="#4c8dff" stroke-width="1" opacity=".7"/>'+
+ '<text x="60" y="145" text-anchor="middle" font-size="6.5" letter-spacing="1.6" fill="#a9c4f5" font-family="Consolas,monospace">AI SCAM SHIELD</text></svg>';
+document.querySelectorAll(".face").forEach(f=>f.innerHTML=LOGO);
+
+
+/* ---------- ambient mechanical system sound (v7 character: sub bed, dark detuned pad, air texture, reactor pulse, relay ticks, servo) - cleaned: limiter bus, click-free envelopes ---------- */
+let amb=null,ambOn=true,ambTimer;
+function startAmbient(){
+ let a;try{a=getAC()}catch(e){return}if(amb)return;
+ const m=a.createGain();m.gain.value=0;m.connect(bus);
+ m.gain.setTargetAtTime(.62,a.currentTime+.2,1.8);
+ const free=(...n)=>n.forEach(x=>{try{x.disconnect()}catch(e){}});
+ /* sub bass bed */
+ const sg=a.createGain();sg.gain.value=.11;sg.connect(m);
+ [[41,"sine"],[82.4,"triangle"]].forEach(([f,t])=>{const o=a.createOscillator();o.type=t;o.frequency.value=f;o.connect(sg);o.start()});
+ /* dark detuned pad with a slow filter sweep */
+ const pf=a.createBiquadFilter();pf.type="lowpass";pf.frequency.value=320;pf.Q.value=1;const pg=a.createGain();pg.gain.value=.045;pf.connect(pg);pg.connect(m);
+ [110,110.6,164.8,165.5].forEach(f=>{const o=a.createOscillator();o.type="sawtooth";o.frequency.value=f;o.connect(pf);o.start()});
+ const fl=a.createOscillator(),fd=a.createGain();fl.frequency.value=.07;fd.gain.value=110;fl.connect(fd);fd.connect(pf.frequency);fl.start();
+ /* low air / machinery texture (seamless loop: ends faded) */
+ const len=a.sampleRate*3,nb=a.createBuffer(1,len,a.sampleRate),d=nb.getChannelData(0);for(let i=0;i<len;i++)d[i]=Math.random()*2-1;
+ const F=4096;for(let i=0;i<F;i++){const k=i/F;d[i]*=k;d[len-1-i]*=k}
+ const ns=a.createBufferSource();ns.buffer=nb;ns.loop=true;const bp=a.createBiquadFilter();bp.type="bandpass";bp.frequency.value=260;bp.Q.value=.9;
+ const ng=a.createGain();ng.gain.value=.028;ns.connect(bp);bp.connect(ng);ng.connect(m);ns.start();
+ amb={m};
+ /* slow reactor pulse every ~3.4 s */
+ (function pulseLoop(){
+  if(ambOn&&amb&&a.state==="running"){const t=a.currentTime+.02,o=a.createOscillator(),g=a.createGain();
+   o.type="sine";o.frequency.setValueAtTime(75,t);o.frequency.exponentialRampToValueAtTime(40,t+.5);
+   g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.26,t+.03);g.gain.exponentialRampToValueAtTime(.0001,t+.7);g.gain.linearRampToValueAtTime(0,t+.74);
+   o.connect(g);g.connect(m);o.start(t);o.stop(t+.78);o.onended=()=>free(o,g)}
+  setTimeout(pulseLoop,3400)})();
+ /* relay ticks and servo movement */
+ (function tick(){
+  if(ambOn&&amb&&a.state==="running"){const t=a.currentTime+.02,k=Math.random(),o=a.createOscillator(),g=a.createGain(),f=a.createBiquadFilter();f.type="lowpass";f.frequency.value=1400;
+   if(k<.6){o.type="triangle";o.frequency.setValueAtTime(520,t);o.frequency.exponentialRampToValueAtTime(300,t+.05);
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.05,t+.004);g.gain.exponentialRampToValueAtTime(.0001,t+.07);g.gain.linearRampToValueAtTime(0,t+.09);o.start(t);o.stop(t+.1)}
+   else{o.type="sawtooth";const x=70+Math.random()*40;o.frequency.setValueAtTime(x,t);o.frequency.exponentialRampToValueAtTime(x*2.2,t+.8);
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.06,t+.3);g.gain.linearRampToValueAtTime(.06,t+.5);g.gain.linearRampToValueAtTime(0,t+.95);o.start(t);o.stop(t+1)}
+   o.connect(f);f.connect(g);g.connect(m);o.onended=()=>free(o,f,g)}
+  ambTimer=setTimeout(tick,2500+Math.random()*3500)})();
+}
+function duck(level){if(amb)amb.m.gain.setTargetAtTime(ambOn?level*.6:0,ac.currentTime,.2)}
+
+/* ---------- voice out ---------- */
+let voiceOn=true,voice=null,lastSpoken="";
+let userPicked=false;
+function pickVoice(){hiVoice=speechSynthesis.getVoices().find(x=>/^hi/i.test(x.lang))||null;
+ const v=speechSynthesis.getVoices().filter(x=>x.lang.startsWith("en"));
+ const sel=$("voiceSel");sel.innerHTML=v.map(x=>"<option>"+x.name+"</option>").join("");
+ if(!userPicked){
+  const pref=["Google UK English Female","Microsoft Aria","Microsoft Jenny","Microsoft Libby","Microsoft Sonia","Microsoft Zira","Microsoft Hazel","Microsoft Susan","Samantha","Karen","Moira","Tessa","Serena","Google US English","Female"];
+  voice=null;for(const n of pref){const f=v.find(x=>x.name.includes(n));if(f){voice=f;break}}
+  if(!voice)voice=v.find(x=>x.lang==="en-GB")||v[0]||null;
+ }
+ if(voice)sel.value=voice.name;
+}
+$("voiceSel").onchange=e=>{const f=speechSynthesis.getVoices().find(x=>x.name===e.target.value);if(f){voice=f;userPicked=true;say("Hello. This is my new voice.")}};
+speechSynthesis.onvoiceschanged=()=>{pickVoice();window.pickVoice2&&pickVoice2()};pickVoice();
+let pt;
+let alT;
+function alertOn(){document.body.classList.add("alert");document.body.classList.toggle("police",$("alertSnd").value!=="klaxon");clearTimeout(alT);alT=setTimeout(alertOff,9000)}
+function alertOff(){document.body.classList.remove("alert","safe","police");clearTimeout(alT)}
+function safeOn(){document.body.classList.add("safe");clearTimeout(alT);alT=setTimeout(alertOff,6000)}
+function setState(s){curState=s;$("state").textContent=T(s)}
+function log(c,t){const l=$("log"),d=document.createElement("div");d.className=c;d.textContent="["+new Date().toLocaleTimeString()+"] "+t;l.appendChild(d);l.scrollTop=l.scrollHeight}
+function say(text,force,hi){
+ if(curLang==="hi"&&!hi)hi=SAYHI[text];const useHi=curLang==="hi"&&hi,shown=useHi?G(hi):text;lastSpoken=text;log("j",BRAND+": "+shown);$("subtitle").textContent=shown;
+ if(!voiceOn&&!force)return;
+ speakQueue((useHi&&hiVoice)?hi:text.replace(new RegExp(BRAND,"gi"),SPOKEN),!!(useHi&&hiVoice));
+}
+function stopSpeak(){window.speakCancel&&speakCancel();speechSynthesis.cancel();pulse(false);setState("STANDBY");duck(.9)}
+
+/* ---------- mode + scan ---------- */
+let mode="msg",lastReport="";
+const LABEL={scam:"THREAT DETECTED",maybe:"SUSPICIOUS",safe:"NO THREAT FOUND"},COL={scam:"var(--bad)",maybe:"var(--warn)",safe:"var(--ok)"};
+const TIPS={scam:"Do not click links, open attachments or share codes. Delete it and report it at cybercrime.gov.in or call 1930.",maybe:"Do not act on it yet. Contact the sender through an official number or website.",safe:"No red flags found, but stay alert. No tool is 100% accurate."};
+function setMode(m){mode=m;$("tMsg").classList.toggle("on",m==="msg");$("tMail").classList.toggle("on",m==="mail");$("fMail").style.display=m==="mail"?"block":"none";
+ $("body").placeholder=curLang==="hi"?(m==="mail"?"ईमेल का मैटर यहाँ पेस्ट करें या बोलकर डालें...":"SMS / WhatsApp मैसेज यहाँ पेस्ट करें या बोलकर डालें..."):(m==="mail"?"Paste the email body here, or use Voice...":"Paste the SMS / WhatsApp message here, or use Voice...");renderSamples()}
+function renderSamples(){const w=$("samples");w.innerHTML="";SAMPLES[mode].forEach(x=>{const b=document.createElement("button");b.className="s";b.textContent=(x.from?x.from+": ":"")+x.b;
+ b.onclick=()=>{$("body").value=x.b;if(mode==="mail"){$("from").value=x.from;$("subj").value=x.subj;$("att").value=x.att}scan()};w.appendChild(b)})}
+function scan(){
+ const body=$("body").value.trim();
+ if(!body){say("Please give me a "+(mode==="mail"?"email":"message")+" to scan.");return}
+ setState("SCANNING");alertOff();$("out").classList.add("scanning");SFX.scan();log("u","SCAN ("+mode.toUpperCase()+"): "+body.slice(0,80));
+ setTimeout(()=>{
+  const r=analyze(mode,body,$("from").value,$("subj").value,$("att").value),kind=mode==="mail"?"email":"message";
+  $("idle").style.display="none";$("res").style.display="block";$("out").className="panel lvl-"+r.level;
+  $("verdict").textContent=(curLang==="hi"?LABELHI:LABEL)[r.level];countUp($("pct"),(curLang==="hi"?(mode==="mail"?"ईमेल":"मैसेज")+" | जोखिम स्तर ":kind.toUpperCase()+" | Risk level "),r.score);
+  const f=$("fill");f.style.width="0";f.style.background=COL[r.level];setTimeout(()=>f.style.width=r.score+"%",50);
+  $("finds").innerHTML=(r.findings.length?r.findings:["No suspicious patterns detected."]).map(x=>"<li>"+tr(x)+"</li>").join("");
+  $("tip").textContent=(curLang==="hi"?TIPSHI:TIPS)[r.level];SFX[r.level]();if(r.level==="scam"){alertOn();duck(.15)}else if(r.level==="safe"){safeOn()}
+  const top=r.findings.slice(0,2).join(" ");
+  const say1={scam:"Warning. This "+kind+" is a scam. Risk level "+r.score+" percent. "+top+" Do not click any link or share any code. You can report it using the emergency buttons on the screen.",
+   maybe:"Caution. This "+kind+" looks suspicious. Risk level "+r.score+" percent. "+top+" Verify with the sender before acting.",
+   safe:"Analysis complete. This "+kind+" appears safe. Risk level "+r.score+" percent."}[r.level];
+  const kHi=mode==="mail"?"ईमेल":"मैसेज",topHi=r.findings.slice(0,2).map(x=>HIF[x]||x).join(" ");
+  const say1hi={scam:"चेतावनी! यह "+kHi+" स्कैम है। जोखिम "+r.score+" प्रतिशत। "+topHi+" कोई लिंक न खोलें और कोई कोड साझा न करें। रिपोर्ट के लिए स्क्रीन पर आपातकालीन बटन इस्तेमाल करें।",maybe:"सावधान! यह "+kHi+" संदिग्ध लगता है। जोखिम "+r.score+" प्रतिशत। "+topHi+" कार्रवाई से पहले भेजने वाले से जाँच कर लें।",safe:"जाँच पूरी हुई। यह "+kHi+" सुरक्षित लगता है। जोखिम "+r.score+" प्रतिशत।"}[r.level];
+  lastReportHi=say1hi;lastReport=say1;setTimeout(()=>say(say1,false,say1hi),r.level==="scam"?({police:3900,klaxon:3100,both:6900})[$("alertSnd").value]:700);
+ },900);
+}
+function clearAll(){["body","from","subj","att"].forEach(i=>$(i).value="");$("res").style.display="none";$("idle").style.display="block";$("out").className="panel";stopSpeak();alertOff();say("Console cleared.")}
+
+/* ---------- voice commands ---------- */
+function handle(raw){
+ const t=raw.trim(),l=hiNorm(t.toLowerCase().replace(new RegExp("^"+BRAND.toLowerCase()+"[, ]*"),""));log("u","YOU: "+t);
+ if(/^(hello|hi|hey|good (morning|evening|afternoon))/.test(l)){say("Hello. "+BRAND+" is online and ready. Give me a message or an email to check.");return}
+ if(/who are you|your name/.test(l)){say("I am "+BRAND+", an assistant that detects scam messages and scam emails, and explains why.");return}
+ if(/what.*time/.test(l)){say("The time is "+new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"}));return}
+ if(/what.*(date|day)/.test(l)){say("Today is "+new Date().toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long",year:"numeric"}));return}
+ if(/(switch|go|change).*(email|mail)|email mode|mail mode/.test(l)){setMode("mail");say("Email mode activated. Paste or dictate the email body.");return}
+ if(/(switch|go|change).*(message|sms|text)|message mode|sms mode/.test(l)){setMode("msg");say("Message mode activated.");return}
+ if(/read (the )?(result|report)|repeat|say (it )?again/.test(l)){say(lastReport||"There is no result yet.",true,lastReport?lastReportHi:undefined);return}
+ if(/^(stop|quiet|silence|shut up)/.test(l)){stopSpeak();alertOff();return}
+ if(/^scan( it| now)?$|scan (this|again)/.test(l)){scan();return}
+ if(/(call|dial).*(cyber|1930)|(cyber|1930).*call/.test(l)){say("Calling the cyber crime helpline, 1 9 3 0.");setTimeout(()=>{location.href="tel:1930"},2500);return}
+ if(/(call|dial).*(local|nearest|station)/.test(l)&&LOCAL_STATION.phone){say("Calling "+(LOCAL_STATION.name||"the local police station")+".");setTimeout(()=>{location.href="tel:"+LOCAL_STATION.phone},2500);return}
+ if(/(call|dial).*(police|112|emergency)|(police|112).*call/.test(l)){say("Calling police emergency, 1 1 2.");setTimeout(()=>{location.href="tel:112"},2500);return}
+ if(/(nearest|near me|find|show|open).*(police|station)|police station/.test(l)){say("Opening the nearest police stations on the map.");setTimeout(openStation,1800);return}
+ if(/^help|what can you do/.test(l)){say("You can say: switch to email, switch to message, scan, read result, call police, call cyber crime, nearest police station, stop, clear. Or just speak any message and I will scan it.");return}
+ if(/^(clear|reset)/.test(l)){clearAll();return}
+ if(/thank/.test(l)){say("Always a pleasure.");return}
+ const body=t.replace(new RegExp("^"+BRAND+"[, ]*","i"),"").replace(/^(scan|check|analy[sz]e)( this| the)?( message| email| mail)?[:, ]*/i,"");
+ $("body").value=body;scan();
+}
+
+/* ---------- emergency options ---------- */
+if(LOCAL_STATION.phone){const a=$("localStn");a.href="tel:"+LOCAL_STATION.phone;a.textContent="\u260E CALL "+(LOCAL_STATION.name||"LOCAL STATION").toUpperCase();a.style.display="inline-block"}
+function openStation(){const w=window.open(MAPS_URL,"_blank");if(!w)say("Please tap the Nearest Police Station button on the screen.")}
+
+/* ---------- animated background ---------- */
+
+function countUp(el,pre,to){clearInterval(el._t);let n=0;if(to<=0){el.textContent=pre+"0%";return}el._t=setInterval(()=>{n=Math.min(to,n+Math.max(1,Math.ceil(to/25)));el.textContent=pre+n+"%";if(n>=to)clearInterval(el._t)},28)}
+
+function applyLang(){const h=curLang==="hi";
+ document.querySelectorAll("h2,.tab,#scan,#read,#clr,#idle,.sos a.btn:not(#localStn)").forEach(e=>{if(!e.dataset.en)e.dataset.en=e.textContent.trim();e.textContent=h&&UIHI[e.dataset.en]?UIHI[e.dataset.en]:e.dataset.en});
+ if(!$("mic").classList.contains("live")&&!$("mic").disabled)$("mic").textContent=T("VOICE INPUT");
+ setState(curState);
+ $("from").placeholder=h?"भेजने वाला (जैसे support@sbi-secure.xyz)":"Sender (e.g. support@sbi-secure.xyz)";
+ $("subj").placeholder=h?"विषय (Subject)":"Subject";
+ $("att").placeholder=h?"अटैचमेंट के नाम, कॉमा से अलग (वैकल्पिक)":"Attachment names, comma separated (optional)";
+ setMode(mode)}
+function hiNorm(l){if(l.length>45)return l;
+ return l.replace(/नमस्ते|हेलो|हैलो/g,"hello").replace(/(नतीजा|रिज़ल्ट|रिजल्ट)\s*(सुनाओ|सुनाइए|बताओ)|दोबारा बोलो/g,"read result").replace(/ईमेल\s*मोड/g,"email mode").replace(/(मैसेज|संदेश)\s*मोड/g,"message mode").replace(/स्कैन\s*(करो|कीजिए|करें)?/g,"scan").replace(/रुको|रुक जाओ|चुप/g,"stop").replace(/(साफ़|साफ)\s*(करो|कीजिए)?|क्लियर/g,"clear").replace(/मदद|सहायता/g,"help").replace(/धन्यवाद|शुक्रिया/g,"thank").replace(/साइबर\s*क्राइम/g,"cyber").replace(/पुलिस/g,"police").replace(/स्टेशन|थाना/g,"station").replace(/नज़दीकी|नजदीकी/g,"nearest").replace(/(कॉल|फोन|फ़ोन)\s*(करो|करें)?/g,"call")}
+
+/* ---------- wiring ---------- */
+function askMic(){
+ const st=$("micStat");
+ if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){st.textContent="UNAVAILABLE";return}
+ navigator.mediaDevices.getUserMedia({audio:true}).then(m=>{m.getTracks().forEach(t=>t.stop());st.textContent="READY";st.style.color="var(--ok)";log("j","Microphone access granted.")})
+ .catch(()=>{st.textContent="BLOCKED";st.style.color="var(--bad)";say("Microphone access is blocked. Click the lock icon in the address bar, allow the microphone, and reload the page.")});
+}
+$("langBtn").onclick=()=>{curLang=curLang==="en"?"hi":"en";$("langBtn").textContent="LANGUAGE: "+(curLang==="hi"?"हिंदी":"EN");$("lang").value=curLang==="hi"?"hi-IN":"en-IN";applyLang();say(curLang==="hi"?"Language changed to Hindi.":"Language changed to English.",false,"भाषा हिंदी कर दी गई है।")};
+$("scan").onclick=scan;$("clr").onclick=clearAll;$("tMsg").onclick=()=>setMode("msg");$("tMail").onclick=()=>setMode("mail");
+$("amb").onclick=()=>{ambOn=!ambOn;$("amb").textContent="SOUND FX: "+(ambOn?"ON":"OFF");duck(.9)};
+$("read").onclick=()=>say(lastReport||"There is no result yet.",true,lastReport?lastReportHi:undefined);
+$("mute").onclick=()=>{voiceOn=!voiceOn;$("mute").textContent="VOICE: "+(voiceOn?"ON":"OFF");if(!voiceOn)stopSpeak()};
+$("body").addEventListener("keydown",e=>{if(e.ctrlKey&&e.key==="Enter")scan()});
+setInterval(()=>{if(!document.hidden)$("clock").textContent=new Date().toLocaleTimeString()},1000);
+
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition,mic=$("mic");
+if(!SR){mic.disabled=true;mic.textContent="MIC: USE CHROME"}
+else{const r=new SR();r.interimResults=false;let on=false;
+ mic.onclick=()=>{stopSpeak();try{if(on){r.stop()}else{r.lang=$("lang").value;r.start()}}catch(e){try{r.abort()}catch(_){}on=false;mic.classList.remove("live");mic.textContent=T("VOICE INPUT");setState("STANDBY")}};
+ r.onstart=()=>{duck(.05);on=true;mic.classList.add("live");mic.textContent=T("LISTENING...");setState("LISTENING");SFX.listen()};
+ r.onend=()=>{duck(.9);on=false;mic.classList.remove("live");mic.textContent=T("VOICE INPUT");if(curState==="LISTENING")setState("STANDBY")};
+ r.onresult=e=>handle(e.results[0][0].transcript);
+ r.onerror=e=>{if(e.error==="aborted")return;const m={"not-allowed":"Microphone access is blocked. Click the lock icon in the address bar, allow the microphone, and reload the page.","service-not-allowed":"Microphone access is blocked. Please allow the microphone in the browser.","no-speech":"I did not hear anything. Please speak after the beep.","audio-capture":"No microphone found. Please connect a microphone.","network":"Voice input needs an internet connection."};say(m[e.error]||"I could not hear that. Please try again.")}}
+</script>
+<script>
+/* landing page: functional controls, smooth transition */
+(function(){
+const $=id=>document.getElementById(id),boot=$("boot"),sh=$("shutter");
+const go=id=>{const t=$(id);if(t)boot.scrollTo({top:boot.scrollTop+t.getBoundingClientRect().top-72,behavior:"smooth"});$("links").classList.remove("open")};
+document.querySelectorAll("[data-go]").forEach(a=>a.onclick=e=>{e.preventDefault();go(a.dataset.go)});
+$("burger").onclick=()=>$("links").classList.toggle("open");
+$("lLaunch").onclick=()=>{if($("init").style.display!=="none")$("init").click()};
+/* scroll progress, back-to-top, active link */
+const links=[...document.querySelectorAll(".links a")];
+let rq=0;boot.addEventListener("scroll",()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const m=boot.scrollHeight-boot.clientHeight;$("prog").style.transform="scaleX("+(m?boot.scrollTop/m:0)+")";$("toTop").classList.toggle("on",boot.scrollTop>500);
+ let cur="";links.forEach(a=>{const t=$(a.dataset.go);if(t&&t.getBoundingClientRect().top<innerHeight*.45)cur=a.dataset.go});links.forEach(a=>a.classList.toggle("on",a.dataset.go===cur))})},{passive:true});
+$("toTop").onclick=()=>boot.scrollTo({top:0,behavior:"smooth"});
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{root:boot,threshold:.12});
+document.querySelectorAll("#boot .feat,#boot .stats").forEach(e=>{e.classList.add("rv");io.observe(e)});
+/* typewriter (restartable) */
+const L=["Scanning for phishing patterns...","Voice interface standing by...","Hindi and English language packs loaded...","Emergency SOS channel ready...","All systems nominal. Awaiting activation."];let tk=0;function type(){const my=++tk,el=$("jtxt");let li=0;(function t(){if(my!==tk||boot.style.display==="none")return;el.textContent=L[li];el.classList.add("show");setTimeout(()=>{el.classList.remove("show");setTimeout(()=>{li=(li+1)%L.length;t()},650)},2700)})()}
+function counters(){document.querySelectorAll(".stats b").forEach(n=>{const T=n.dataset.n==="rules"?(COMMON.length+MAILONLY.length):+n.dataset.n,st=performance.now();(function f(now){const p=Math.min(1,(now-st)/1600);n.textContent=Math.round(T*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(st)})}
+type();counters();
+
+/* landing language */
+function landLang(){const h=curLang==="hi";document.querySelectorAll("#boot [data-hi]").forEach(e=>{if(!e.dataset.en)e.dataset.en=e.textContent;e.textContent=h?e.dataset.hi:e.dataset.en});$("lLang").textContent=h?"EN":"हिंदी";
+ $("qText").placeholder=h?"संदिग्ध SMS / WhatsApp मैसेज यहाँ पेस्ट करें... (Ctrl+Enter से स्कैन)":"Paste a suspicious SMS / WhatsApp message here... (Ctrl+Enter to scan)"}
+$("lLang").onclick=()=>{curLang=curLang==="en"?"hi":"en";$("langBtn").textContent="LANGUAGE: "+(curLang==="hi"?"हिंदी":"EN");$("lang").value=curLang==="hi"?"hi-IN":"en-IN";applyLang();landLang();if(qLast)qRender(qLast)};
+/* quick scan (uses the real scan engine) */
+let qLast=null;
+function qRender(r){const h=curLang==="hi",o=$("qOut");o.className="qout "+r.level;o.innerHTML="";
+ const v=document.createElement("div");v.className="qv";v.textContent=(h?LABELHI:LABEL)[r.level];const p=document.createElement("div");p.className="qp";p.textContent=(h?"जोखिम स्तर ":"Risk level ")+r.score+"%";
+ const m=document.createElement("div");m.className="qm";const i=document.createElement("i");i.style.background=COL[r.level];m.appendChild(i);const ul=document.createElement("ul");
+ (r.findings.length?r.findings:[h?"कोई संदिग्ध पैटर्न नहीं मिला।":"No suspicious patterns found."]).forEach(t=>{const li=document.createElement("li");li.textContent=h&&HIF[t]?HIF[t]:t;ul.appendChild(li)});
+ o.append(v,p,m,ul);requestAnimationFrame(()=>requestAnimationFrame(()=>i.style.width=Math.min(100,r.score)+"%"))}
+function qScan(){const t=$("qText").value.trim();if(!t){$("qText").focus();return}qLast=analyze("msg",t,"","","");qRender(qLast)}
+$("qScan").onclick=qScan;$("qText").addEventListener("keydown",e=>{if(e.ctrlKey&&e.key==="Enter")qScan()});
+$("qClr").onclick=()=>{$("qText").value="";qLast=null;$("qOut").className="qout";$("qOut").innerHTML='<div class="qidle">'+(curLang==="hi"?"इनपुट का इंतज़ार है। मैसेज पेस्ट करें और स्कैन दबाएँ।":"Awaiting input. Paste a message and press SCAN NOW.")+"</div>"};
+$("qOpen").onclick=()=>{$("body").value=$("qText").value;if($("init").style.display!=="none")$("init").click()};
+SAMPLES.msg.slice(0,3).forEach(x=>{const b=document.createElement("button");b.className="s";b.textContent=x.b;b.onclick=()=>{$("qText").value=x.b;qScan()};$("qSamples").appendChild(b)});
+/* intro: boot sound finishes -> veil -> app -> greeting spoken completely */
+let lock=false,pend=null;const rawSay=say;
+say=function(t,force,hi){if(lock){pend=[t,force,hi];return}return rawSay(t,force,hi)};
+function waitSpeech(done){let n=0;const iv=setInterval(()=>{n++;const sp=window.speechSynthesis&&(speechSynthesis.speaking||speechSynthesis.pending);if((n>5&&!sp)||n>130){clearInterval(iv);done()}},150)}
+function unlockSay(){lock=false;setTimeout(askMic,500);if(pend){const p=pend;pend=null;rawSay(p[0],p[1],p[2])}}
+$("init").onclick=()=>{lock=true;pend=null;SFX.boot();startAmbient();
+ $("init").style.display="none";$("bootHint").style.display="none";$("bar").style.display="block";setTimeout(()=>$("barf").style.width="100%",30);
+ ["Initializing core systems...","Loading scam pattern database ........ OK","Calibrating email analysis engine .... OK","Syncing voice assistant .............. OK","Securing communication channels ...... OK","ALL SYSTEMS ONLINE"].forEach((t,i)=>setTimeout(()=>{$("bootLog").innerHTML+=t+"<br>"},i*500));
+ sh.classList.add("on");
+ setTimeout(()=>sh.classList.add("shut"),2400);
+ setTimeout(()=>{boot.style.display="none";$("app").classList.add("on");renderSamples()},3300);
+ setTimeout(()=>sh.classList.remove("shut"),3500);
+ setTimeout(()=>sh.classList.remove("on"),4500);
+ setTimeout(()=>{const h=new Date().getHours();rawSay("Hello. I am "+BRAND+", your A I scam detector. I can detect fake messages, phishing emails and digital arrest scams, in English and Hindi.",false,"नमस्ते। मैं साइबरशील्ड 2077 हूँ, आपका ए आई स्कैम डिटेक्टर। मैं फर्जी मैसेज, फ़िशिंग ईमेल और डिजिटल अरेस्ट स्कैम पहचान सकता हूँ, हिंदी और अंग्रेज़ी दोनों में।");waitSpeech(unlockSay)},4400)};
+/* HOME button inside the app */
+$("homeBtn").onclick=()=>{stopSpeak();alertOff();$("app").classList.remove("on");boot.style.display="";boot.scrollTop=0;$("init").style.display="";$("bootHint").style.display="";
+ const b=$("bar"),f=$("barf");b.style.display="none";f.style.transition="none";f.style.width="0";void f.offsetWidth;f.style.transition="";$("bootLog").innerHTML="";type();counters()};
+landLang();
+})();
+</script>
+<script>
+(function(){const c=document.querySelector(".center"),sub=document.getElementById("subtitle");let tm;
+ window.setTalk=(on,ms)=>{clearTimeout(tm);c.classList.toggle("talk",!!on);if(on&&ms)tm=setTimeout(()=>c.classList.remove("talk"),ms)};
+ const obs=new MutationObserver(()=>{const t=sub.textContent.trim();if(!t||sub.querySelector(".w"))return;sub.textContent="";
+  t.split(/\s+/).forEach((w,i)=>{const e=document.createElement("span");e.className="w";e.textContent=w+" ";e.style.animationDelay=Math.min(i*45,1600)+"ms";sub.appendChild(e)});
+  obs.takeRecords();setTalk(true,Math.min(3200,900+t.length*30))});
+ obs.observe(sub,{childList:true,characterData:true,subtree:true});
+})();
+function pulse(on){clearInterval(pt);const c=document.getElementById("core");c.style.transform="";c.classList.toggle("speak",!!on);setTalk(true,on?0:800)}
+</script>
+
+<script>
+/* ===== v2.0 : Voice Pack, report tools, KPIs ===== */
+(function(){
+const $=id=>document.getElementById(id);
+const store={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:v}catch(e){return d}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const PRESETS={pro:[.98,1],deep:[.92,.8],calm:[.85,1],fast:[1.15,1.05]};
+$("vpRate").value=store.get("cs_rate",.98);$("vpPitch").value=store.get("cs_pitch",1);$("vpPreset").value=store.get("cs_preset","pro");
+const vp=()=>({rate:+$("vpRate").value,pitch:+$("vpPitch").value});
+/* gender helpers */
+const MALE_RE=/\bmale\b|madhur|hemant|prabhat|ravi|rishi|kabir|arjun|aarav|aditya|vivek|sagar|rohan|amit|rahul|sameer|mohan|guy|ryan|david|mark|george|james|alex|daniel|fred|ethan|liam|thomas|brian|eric|christopher|roger|steffan|davis|tony|jason|reed|rocko|eddy|grandpa|google uk english male/i;
+const FEMALE_RE=/female|महिला|swara|kalpana|lekha|neerja|heera|aarti|ananya|kavya|priya|sapna|aditi|divya|pooja|neha|shruti|riya|isha|asha|aria|jenny|sonia|libby|zira|hazel|susan|samantha|karen|moira|tessa|veena|serena|kajal|hindi|हिन्दी|google us english|google uk english female/i;
+function vGender(v){if(!v)return"";const n=v.name;
+ if(/female|महिला/i.test(n))return"female";
+ if(MALE_RE.test(n))return"male";
+ if(FEMALE_RE.test(n))return"female";
+ return""}
+function gs(v){const g=vGender(v);return g===curGender?1:(g?-1:0)}
+/* if the device has no voice of the chosen gender, shift the pitch (and slow down a little) instead */
+function pitchOff(v){if(vGender(v)===curGender)return 1;return curGender==="male"?.7:1.1}
+function rateOff(v){return(curGender==="male"&&vGender(v)!==curGender)?.95:1}
+const gtag=v=>{const g=vGender(v);return g==="male"?" [M]":g==="female"?" [F]":""};
+
+/* sentence-chunked speech: avoids the Chrome ~15s cut-off on long text */
+let spkId=0;
+window.speakQueue=function(str,isHi){
+ speechSynthesis.cancel();const id=++spkId;const us=[];
+ const parts=String(isHi?G(str):str).replace(/\s+/g," ").match(/[^.!?।]+[.!?।]?/g)||[String(str)];
+ const chunks=[];let cur="";
+ parts.forEach(p=>{p=p.trim();if(!p)return;if(cur&&(cur+" "+p).length>150){chunks.push(cur);cur=p}else cur=cur?cur+" "+p:p});if(cur)chunks.push(cur);
+ const P=vp(),v=isHi?hiVoice:voice;
+ chunks.forEach((c,i)=>{const u=new SpeechSynthesisUtterance(c);
+  if(v){u.voice=v;u.lang=v.lang}else u.lang=isHi?"hi-IN":"en-IN";
+  u.rate=Math.min(2,Math.max(.5,P.rate*rateOff(v)));u.pitch=Math.min(2,Math.max(.1,P.pitch*pitchOff(v)));u.volume=1;
+  if(i===0)u.onstart=()=>{setState("SPEAKING");pulse(true);duck(.35)};
+  if(i===chunks.length-1)u.onend=u.onerror=()=>{if(id!==spkId)return;setState("STANDBY");pulse(false);duck(.9)};
+  us.push(u)});
+ setTimeout(()=>{if(id!==spkId)return;try{speechSynthesis.resume()}catch(e){}us.forEach(u=>speechSynthesis.speak(u))},90);
+};
+window.speakCancel=function(){spkId++};
+
+/* voice discovery: best Indian-English and Hindi voices first */
+function fill(sel,list,saved,fallbackText){
+ sel.innerHTML="";
+ if(!list.length){const o=document.createElement("option");o.textContent=fallbackText;o.disabled=true;sel.appendChild(o);return null}
+ list.forEach(v=>{const o=document.createElement("option");o.value=v.name;o.textContent=v.name+" ("+v.lang+")"+gtag(v)+(v.localService?"":" *online");sel.appendChild(o)});
+ const f=list.find(v=>v.name===saved)||list[0];sel.value=f.name;return f}
+window.pickVoice2=function(){
+ const all=speechSynthesis.getVoices();if(!all.length)return;
+ const es=v=>{let s=0,n=v.name;if(/en-IN/i.test(v.lang))s+=30;if(/Natural|Online|Neural/i.test(n))s+=25;if(/Neerja|Aria|Jenny|Sonia|Libby|Samantha|Veena|Zira|Google UK English Female/i.test(n))s+=20;if(/Google/i.test(n))s+=8;if(/female/i.test(n))s+=5;if(/espeak|compact/i.test(n))s-=30;return s};
+ const hs=v=>{let s=0,n=v.name;if(/Natural|Online|Neural/i.test(n))s+=25;if(/Swara|Kalpana|Lekha|Google/i.test(n))s+=15;return s};
+ const en=all.filter(v=>/^en/i.test(v.lang)).sort((a,b)=>(gs(b)*100+es(b))-(gs(a)*100+es(a)));
+ const hi0=all.filter(v=>/^hi/i.test(v.lang)),needFb=!hi0.some(v=>vGender(v)===curGender),lb=v=>needFb&&v.localService?40:0;
+ const hi=hi0.sort((a,b)=>(gs(b)*100+hs(b)+lb(b))-(gs(a)*100+hs(a)+lb(a)));
+ voice=fill($("vpEn"),en,store.get("cs_en",""),"No English voice found");
+ hiVoice=fill($("vpHi"),hi,store.get("cs_hi",""),"No Hindi voice on this device");
+ $("vpInfo").textContent=en.length+" EN / "+hi.length+" HI voices"+(hi.length?"":" | Hindi shown as text, English voice speaks");
+ const fb=[];if(voice&&vGender(voice)!==curGender)fb.push("EN");if(hiVoice&&vGender(hiVoice)!==curGender)fb.push("HI");
+ if(fb.length){$("vpInfo").textContent+=" | no "+curGender+" "+fb.join("/")+" voice found, pitch adjusted";
+  if(curGender==="male"&&fb.includes("HI")){$("vpInfo").textContent+=hiVoice&&!hiVoice.localService?". This Hindi voice is online, so pitch may be ignored: pick a local one in HINDI VOICE, or install a male Hindi voice (Windows: Hemant / Madhur, Android: Google Text-to-speech > Hindi)":". For a true male Hindi voice install one (Windows: Hemant / Madhur, Android: Google Text-to-speech > Hindi)"}}
+};
+$("vpEn").onchange=e=>{const f=speechSynthesis.getVoices().find(v=>v.name===e.target.value);if(f){voice=f;userPicked=true;store.set("cs_en",f.name);$("vpTestEn").click()}};
+$("vpHi").onchange=e=>{const f=speechSynthesis.getVoices().find(v=>v.name===e.target.value);if(f){hiVoice=f;store.set("cs_hi",f.name);$("vpTestHi").click()}};
+$("vpPreset").onchange=e=>{const p=PRESETS[e.target.value];$("vpRate").value=p[0];$("vpPitch").value=p[1];store.set("cs_preset",e.target.value);store.set("cs_rate",p[0]);store.set("cs_pitch",p[1])};
+$("vpRate").oninput=()=>store.set("cs_rate",$("vpRate").value);$("vpPitch").oninput=()=>store.set("cs_pitch",$("vpPitch").value);
+$("vpTestEn").onclick=()=>speakQueue("Hello. Cyber shield twenty seventy seven is online. This is your selected voice.",false);
+$("vpTestHi").onclick=()=>{if(hiVoice)speakQueue("नमस्ते! मैं साइबरशील्ड हूँ। मैं आपको स्कैम से बचाने में मदद करूँगा।",true);else say("No Hindi voice is installed on this device. Add a Hindi voice in the system speech settings.",true)};
+const GL={female:"FEMALE / महिला",male:"MALE / पुरुष"};
+function syncGender(){$("vpGender").value=curGender;$("genBtn").textContent="VOICE: "+GL[curGender]}
+function setGender(g,announce){curGender=g;store.set("cs_gender",g);store.set("cs_en","");store.set("cs_hi","");userPicked=false;syncGender();pickVoice2();
+ if(announce)say(g==="male"?"Voice changed to male.":"Voice changed to female.",true,g==="male"?"अब मैं पुरुष आवाज़ में बोलूँगा।":"अब मैं महिला आवाज़ में बोलूँगी।")}
+$("vpGender").onchange=e=>setGender(e.target.value,true);
+$("genBtn").onclick=()=>setGender(curGender==="male"?"female":"male",true);
+syncGender();
+pickVoice2();
+(function(){let n=0;const iv=setInterval(()=>{n++;const c=speechSynthesis.getVoices().length;if(c&&(!window.__vc||window.__vc!==c)){window.__vc=c;pickVoice2()}if(n>20)clearInterval(iv)},500)})();
+
+/* Hinglish voice commands + report commands */
+const _hn=window.hiNorm;
+window.hiNorm=function(l){l=_hn(l);if(l.length>45)return l;
+ return l.replace(/\b(scan|check|jaanch)\s*(karo|kar do|kijiye)\b/g,"scan").replace(/\b(result|natija|nateeja)\s*(sunao|batao|suna do)\b/g,"read result").replace(/\b(band karo|chup|ruko)\b/g,"stop").replace(/\b(saaf karo|clear karo|hata do)\b/g,"clear").replace(/\bpolice ko call( karo)?\b/g,"call police").replace(/\bnamaste\b/g,"hello").replace(/\bmadad\b/g,"help")};
+const _h=window.handle;
+window.handle=function(raw){const l=raw.toLowerCase();
+ if(l.length<40&&/voice|awaaz|aawaz|आवाज़|आवाज/.test(l)){
+  if(/female|woman|girl|ladki|aurat|महिला|लड़की|औरत/.test(l)){setGender("female",true);return}
+  if(/\bmale\b|\bman\b|\bboy\b|ladka|aadmi|पुरुष|लड़का|आदमी/.test(l)){setGender("male",true);return}}
+ if(/copy (the )?report|रिपोर्ट कॉपी/.test(l)){copyReport();return}
+ if(/(print|pdf).*report|report.*(print|pdf)/.test(l)){window.print();return}
+ return _h(raw)};
+
+/* KPIs */
+const hs=document.querySelector("#app header>span"),k=document.createElement("span");
+k.innerHTML='<span class="kpi">SCANNED<b id="kS">0</b></span><span class="kpi">THREATS<b id="kT">0</b></span>';hs.parentNode.insertBefore(k,hs);
+let nS=0,nT=0,LAST=null;const HIST=[];
+/* history panel */
+const hist=document.createElement("div");hist.className="hist";hist.id="hist";hist.innerHTML="<h2>RECENT SCANS</h2>";
+$("out").insertBefore(hist,document.querySelector("#out .sos"));
+function renderHist(){hist.querySelectorAll(".hit").forEach(e=>e.remove());
+ HIST.slice(0,5).forEach(x=>{const b=document.createElement("button");b.className="hit";const d=document.createElement("i");d.style.background=COL[x.r.level];
+  const t=document.createElement("span");t.textContent=x.time+" | "+x.r.score+"% | "+x.body.slice(0,38)+(x.body.length>38?"...":"");b.append(d,t);
+  b.onclick=()=>{if(x.mode!==mode)setMode(x.mode);$("body").value=x.body;if(x.mode==="mail"){$("from").value=x.from||"";$("subj").value=x.subj||""}scan()};hist.appendChild(b)})}
+const _an=window.analyze;
+window.analyze=function(m,body,from,subj,att){const r=_an(m,body,from,subj,att);
+ LAST={r,mode:m,body,from,subj};
+ if(!HIST.length||HIST[0].body!==body){nS++;if(r.level==="scam")nT++;$("kS").textContent=nS;$("kT").textContent=nT;
+  HIST.unshift({r,mode:m,body,from,subj,time:new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"})});HIST.length=Math.min(HIST.length,10);renderHist()}
+ return r};
+
+/* report: copy / print / demo mode */
+function toast(t){let e=$("toast");if(!e){e=document.createElement("div");e.id="toast";document.body.appendChild(e)}e.textContent=t;e.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove("on"),2200)}
+function report(){if(!LAST)return null;const{r,mode:m,body,from,subj}=LAST,h=curLang==="hi";
+ const L=[BRAND+" - SCAN REPORT","Time: "+new Date().toLocaleString(),"Type: "+(m==="mail"?"Email":"Message / SMS")];
+ if(m==="mail"){if(from)L.push("From: "+from);if(subj)L.push("Subject: "+subj)}
+ L.push("Verdict: "+(h?LABELHI:LABEL)[r.level]+" ("+r.score+"% risk)","","Findings:");
+ (r.findings.length?r.findings:["No suspicious patterns detected."]).forEach(f=>L.push(" - "+tr(f)));
+ L.push("",(h?TIPSHI:TIPS)[r.level],"","Report cyber fraud: call 1930 or visit cybercrime.gov.in","","Scanned text: "+body.slice(0,300));return L.join("\n")}
+window.copyReport=function(){const t=report();if(!t){toast("Scan something first");return}
+ const done=()=>toast("Report copied to clipboard");
+ if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(done,()=>fb(t,done));else fb(t,done)};
+function fb(t,done){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");done()}catch(e){toast("Copy not supported")}a.remove()}
+const bt=document.querySelector("#app .panel .btns");
+[["COPY REPORT",()=>copyReport()],["PRINT / PDF",()=>{if(!LAST){toast("Scan something first");return}window.print()}],["DEMO MODE",function(){const on=document.body.classList.toggle("demo");this.textContent=on?"EXIT DEMO":"DEMO MODE"}]].forEach(([n,f])=>{const b=document.createElement("button");b.className="btn";b.textContent=n;b.onclick=f;bt.appendChild(b)});
+})();
+</script>
+
+<script>
+/* v3 rings */
+(function(){
+function pt(r,a){return[(200+r*Math.cos(a)).toFixed(2),(200+r*Math.sin(a)).toFixed(2)]}
+function L(c,x){return '<svg class="jrv '+c+'" viewBox="0 0 400 400" aria-hidden="true">'+x+'</svg>'}
+function sweep(){let s='';for(let i=0;i<14;i++){const a=(-90+i*5.6)*Math.PI/180,b=(-90+(i+1)*5.6)*Math.PI/180,p=pt(106,a),q=pt(106,b);s+='<path d="M'+p[0]+' '+p[1]+'A106 106 0 0 1 '+q[0]+' '+q[1]+'" fill="none" class="st" stroke-width="66" opacity="'+(.36*(1-i/14)).toFixed(3)+'"/>'}return L('rsw',s)}
+function build(u){
+ let t='';
+ /* J1: tick ring */
+ let k='';for(let i=0;i<120;i++){const a=i*Math.PI/60,L=i%10===0,p=pt(L?176:182,a),q=pt(194,a);k+='<line x1="'+p[0]+'" y1="'+p[1]+'" x2="'+q[0]+'" y2="'+q[1]+'" class="st" stroke-width="'+(L?2:1)+'" opacity="'+(L?.95:.5)+'"/>'}
+ t+=L('jr1',k);
+ /* J2: text ring */
+ t+=L('jr2','<defs><path id="jt'+u+'" d="M200,200 m-170,0 a170,170 0 1,1 340,0 a170,170 0 1,1 -340,0"/></defs>'+
+  '<text font-size="9.5" class="fl" opacity=".85" font-family="Consolas,monospace"><textPath href="#jt'+u+'" textLength="1060" lengthAdjust="spacing">CYBERSHIELD 2077 • AI SCAM SHIELD • SMS + EMAIL PROTECTION • VOICE ENABLED • </textPath></text>');
+ /* J3: four heavy arcs */
+ t+=L('jr3','<circle cx="200" cy="200" r="154" fill="none" class="st" stroke-width="5" stroke-dasharray="190 45.6" stroke-linecap="butt" opacity=".9"/><circle cx="200" cy="200" r="147" fill="none" class="st2" stroke-width="1" opacity=".5"/>');
+ /* J4: dashed ring + triangle markers */
+ let m='';[0,120,240].forEach(d=>{const a=d*Math.PI/180,p=pt(140,a),q=pt(131,a-.05),r=pt(131,a+.05);m+='<polygon points="'+p[0]+','+p[1]+' '+q[0]+','+q[1]+' '+r[0]+','+r[1]+'" class="fl"/>'});
+ t+=L('jr4','<circle cx="200" cy="200" r="138" fill="none" class="st2" stroke-width="1.5" stroke-dasharray="3 7" opacity=".8"/>'+m);
+ /* J5: fast inner arcs */
+ t+=L('jr5','<circle cx="200" cy="200" r="124" fill="none" class="st2" stroke-width="3" stroke-dasharray="90 65" stroke-linecap="round" opacity=".95"/>');
+ return t+sweep()}
+/* app console */
+const stage=document.querySelector(".stage"),logo=document.getElementById("logo");
+if(stage&&logo){const w=document.createElement("div");w.style.cssText="position:absolute;inset:0;pointer-events:none";w.innerHTML=build("a");stage.insertBefore(w,logo)}
+/* landing hero */
+const hud=document.getElementById("hud"),core=hud&&hud.querySelector(".hcore");
+if(hud&&core){const w=document.createElement("div");w.style.cssText="position:absolute;inset:0;pointer-events:none;z-index:0";w.innerHTML=build("b");hud.insertBefore(w,core);
+ core.innerHTML='<div class="coin"><div class="face f">'+LOGO+'</div><div class="face b">'+LOGO+'</div></div>'}
+})();
+</script>
+
+
+<div id="stnM" role="dialog" aria-modal="true" aria-labelledby="stnT"><div class="sbox"><button id="stnX" aria-label="Close">&#10005;</button><h3 id="stnT"></h3><div class="ss" id="stnS"></div><div id="stnR"></div><div id="stnMap"></div><div class="btns" id="stnB"></div></div></div>
+<script>
+(function(){
+const $=id=>document.getElementById(id),root=document.documentElement;
+if((navigator.hardwareConcurrency||8)<=4||(navigator.deviceMemory||8)<=4||innerWidth<700)root.classList.add("lite");
+document.addEventListener("visibilitychange",()=>root.classList.toggle("paused",document.hidden));
+const hud=$("hud");if(hud&&"IntersectionObserver"in window)new IntersectionObserver(e=>hud.classList.toggle("off",!e[0].isIntersecting),{root:$("boot")}).observe(hud);
+/* console reactor rings as GPU layers */
+const stg=document.querySelector(".stage"),lg=$("logo");
+if(stg&&lg){const w=document.createElement("div");w.style.cssText="position:absolute;inset:0;pointer-events:none";
+ w.innerHTML='<svg class="jrv sp1" viewBox="0 0 400 400"><circle cx="200" cy="200" r="165" fill="none" style="stroke:var(--c)" stroke-width="3" stroke-dasharray="90 30 10 30" opacity=".85"/></svg><svg class="jrv sp2" viewBox="0 0 400 400"><circle cx="200" cy="200" r="132" fill="none" style="stroke:var(--c)" stroke-width="1.5" stroke-dasharray="4 6" opacity=".8"/><circle cx="200" cy="200" r="112" fill="none" style="stroke:var(--c2)" stroke-width="6" stroke-dasharray="40 20" opacity=".6"/></svg>';
+ stg.insertBefore(w,lg)}
+
+/* ===== nearest police station from exact GPS ===== */
+const TX={
+en:{t:"NEAREST POLICE STATION",loc:"Getting your exact location...",acc:"Accuracy",find:"Searching police stations around you...",away:"away",others:"OTHER STATIONS NEARBY",nav:"\u27A4 NAVIGATE",call:"\u260E CALL",gm:"OPEN IN GOOGLE MAPS",c112:"\u260E CALL 112",retry:"TRY AGAIN",
+ none:"No station found in map data near you. Showing Google Maps around your location.",deny:"Location permission is blocked. Allow Location for this site (lock icon in the address bar) and tap again.",unav:"Could not get your location. Turn ON GPS / Location and try again.",ins:"Exact location needs HTTPS (or localhost). Open the page from an https link.",net:"Could not load station data. Showing Google Maps around your location.",unn:"Police Station",
+ say:(n,d)=>"The nearest police station is "+n+", about "+d+" away."},
+hi:{t:"नज़दीकी पुलिस स्टेशन",loc:"आपकी सटीक लोकेशन ली जा रही है...",acc:"सटीकता",find:"आसपास के पुलिस स्टेशन खोजे जा रहे हैं...",away:"दूर",others:"आसपास के अन्य स्टेशन",nav:"\u27A4 रास्ता देखें",call:"\u260E कॉल करें",gm:"गूगल मैप्स में खोलें",c112:"\u260E 112 को कॉल",retry:"फिर कोशिश करें",
+ none:"मैप डेटा में पास में कोई स्टेशन नहीं मिला। आपकी लोकेशन के आसपास गूगल मैप्स दिखा रहा हूँ।",deny:"लोकेशन की अनुमति बंद है। एड्रेस बार के लॉक आइकन से Location अनुमति दें और फिर दबाएँ।",unav:"आपकी लोकेशन नहीं मिल पाई। GPS / Location चालू करके दोबारा कोशिश करें।",ins:"सटीक लोकेशन के लिए HTTPS लिंक चाहिए। पेज को https लिंक से खोलें।",net:"स्टेशन का डेटा लोड नहीं हो पाया। आपकी लोकेशन के आसपास गूगल मैप्स दिखा रहा हूँ।",unn:"पुलिस स्टेशन",
+ say:(n,d)=>"सबसे नज़दीकी पुलिस स्टेशन "+n+" है, लगभग "+d+" दूर।"}};
+const EP=["https://overpass-api.de/api/interpreter","https://overpass.kumi.systems/api/interpreter"],FB="https://www.google.com/maps/search/police+station+near+me";
+let run=0,cancel=null;
+const tt=()=>TX[typeof curLang!=="undefined"&&curLang==="hi"?"hi":"en"];
+const fmt=m=>m<1000?Math.round(m)+" m":(m/1000).toFixed(1)+" km";
+function hav(a,b,c,d){const R=6371000,r=Math.PI/180,x=(c-a)*r,y=(d-b)*r,h=Math.sin(x/2)**2+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)**2;return 2*R*Math.asin(Math.sqrt(h))}
+function el(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+function btn(txt,href){const a=el("a","btn",txt);a.href=href;if(/^http/.test(href)){a.target="_blank";a.rel="noopener"}return a}
+function close(){run++;if(cancel)cancel();$("stnM").classList.remove("on")}
+function getPos(upd){return new Promise((res,rej)=>{let best=null,fin=false,w,tm;
+ const end=(ok,v)=>{if(fin)return;fin=true;clearTimeout(tm);try{navigator.geolocation.clearWatch(w)}catch(e){}ok?res(v):rej(v)};
+ const low=()=>navigator.geolocation.getCurrentPosition(p=>end(1,p),e=>end(0,e),{enableHighAccuracy:false,timeout:10000,maximumAge:60000});
+ w=navigator.geolocation.watchPosition(p=>{if(!best||p.coords.accuracy<best.coords.accuracy){best=p;upd(p)}if(p.coords.accuracy<=40)end(1,best)},e=>{if(e.code===1)end(0,e)},{enableHighAccuracy:true,maximumAge:0,timeout:20000});
+ tm=setTimeout(()=>{if(best)end(1,best);else{try{navigator.geolocation.clearWatch(w)}catch(e){}low()}},7000);
+ cancel=()=>end(0,{code:-9})})}
+async function overpass(lat,lng,r){
+ const q='[out:json][timeout:12];(node["amenity"="police"](around:'+r+','+lat+','+lng+');way["amenity"="police"](around:'+r+','+lat+','+lng+'););out center tags 40;';
+ for(const u of EP){const c=new AbortController(),tm=setTimeout(()=>c.abort(),9000);
+  try{const res=await fetch(u,{method:"POST",body:"data="+encodeURIComponent(q),headers:{"Content-Type":"application/x-www-form-urlencoded"},signal:c.signal});clearTimeout(tm);if(!res.ok)continue;return (await res.json()).elements||[]}catch(e){clearTimeout(tm)}}
+ return null}
+function gmap(lat,lng){const f=document.createElement("iframe");f.loading="lazy";f.title="map";f.src="https://maps.google.com/maps?q=police+station+near+"+lat+","+lng+"&z=14&output=embed";return f}
+function showBtns(me,st,t){const b=$("stnB");b.textContent="";
+ if(st){b.appendChild(btn(t.nav,"https://www.google.com/maps/dir/?api=1&destination="+st.lat+","+st.lng+"&travelmode=driving"));
+  const ph=(st.tags.phone||st.tags["contact:phone"]||"").split(";")[0].replace(/[^\d+]/g,"");if(ph)b.appendChild(btn(t.call,"tel:"+ph))}
+ b.appendChild(btn(t.gm,"https://www.google.com/maps/search/police+station/@"+me.lat+","+me.lng+",15z"));b.appendChild(btn(t.c112,"tel:112"))}
+function fail(msg,t){$("stnS").textContent=msg;$("stnR").textContent="";$("stnMap").textContent="";const b=$("stnB");b.textContent="";
+ const r=el("button","btn",t.retry);r.onclick=openStn;b.append(r,btn(t.gm,FB),btn(t.c112,"tel:112"))}
+async function openStn(){
+ const id=++run,t=tt();if(cancel)cancel();
+ $("stnT").textContent=t.t;$("stnM").classList.add("on");$("stnS").textContent=t.loc;$("stnR").textContent="";$("stnMap").textContent="";$("stnB").textContent="";
+ if(!navigator.geolocation||!window.isSecureContext){fail(t.ins,t);return}
+ let p;try{p=await getPos(q=>{if(id===run)$("stnS").textContent=t.loc+" ("+t.acc+" \u00B1"+Math.round(q.coords.accuracy)+" m)"})}
+ catch(e){if(id!==run)return;fail(e&&e.code===1?t.deny:t.unav,t);return}
+ if(id!==run)return;
+ const me={lat:p.coords.latitude,lng:p.coords.longitude,acc:p.coords.accuracy};
+ $("stnS").textContent=t.find+" ("+t.acc+" \u00B1"+Math.round(me.acc)+" m)";
+ let els=await overpass(me.lat,me.lng,6000);if(els&&!els.length)els=await overpass(me.lat,me.lng,25000);
+ if(id!==run)return;
+ if(!els||!els.length){$("stnS").textContent=els?t.none:t.net;$("stnMap").appendChild(gmap(me.lat,me.lng));showBtns(me,null,t);return}
+ const list=els.map(e=>{const la=e.lat!=null?e.lat:e.center&&e.center.lat,lo=e.lon!=null?e.lon:e.center&&e.center.lon;return la==null?null:{lat:la,lng:lo,tags:e.tags||{},d:hav(me.lat,me.lng,la,lo)}}).filter(Boolean).sort((a,b)=>a.d-b.d);
+ const n=list[0],name=n.tags.name||n.tags["name:en"]||t.unn,a=n.tags;
+ $("stnS").textContent=t.acc+" \u00B1"+Math.round(me.acc)+" m";
+ const R=$("stnR");R.textContent="";R.appendChild(el("div","sn",name));
+ const dd=el("div","sx");const sd=el("span","sd",fmt(n.d));dd.append(sd," "+t.away);R.appendChild(dd);
+ const addr=[a["addr:housenumber"],a["addr:street"],a["addr:suburb"]||a["addr:city"],a["addr:postcode"]].filter(Boolean).join(", ");if(addr)R.appendChild(el("div","sx",addr));
+ const ph=(a.phone||a["contact:phone"]||"").split(";")[0];if(ph)R.appendChild(el("div","sx","\u260E "+ph));
+ if(list.length>1){const h=el("div","sx",t.others);h.style.cssText="margin-top:12px;letter-spacing:.14em;font-size:.68rem";R.appendChild(h);
+  list.slice(1,4).forEach(x=>{const r=el("div","sl");r.append(el("span",null,x.tags.name||t.unn),el("span",null,fmt(x.d)));R.appendChild(r)})}
+ const pad=.004,l=Math.min(me.lng,n.lng)-pad,b=Math.min(me.lat,n.lat)-pad,r2=Math.max(me.lng,n.lng)+pad,tp=Math.max(me.lat,n.lat)+pad,f=document.createElement("iframe");
+ f.loading="lazy";f.title="map";f.src="https://www.openstreetmap.org/export/embed.html?bbox="+[l,b,r2,tp].join(",")+"&layer=mapnik&marker="+n.lat+","+n.lng;$("stnMap").appendChild(f);
+ showBtns(me,n,t);
+ try{const hi=typeof curLang!=="undefined"&&curLang==="hi",T0=TX[hi?"hi":"en"];say(TX.en.say(name,fmt(n.d)),false,hi?T0.say(name,fmt(n.d)):undefined)}catch(e){}
+}
+$("stnX").onclick=close;$("stnM").addEventListener("click",e=>{if(e.target===$("stnM"))close()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("stnM").classList.contains("on"))close()});
+const hk=a=>a.addEventListener("click",e=>{e.preventDefault();openStn()});
+if($("stn"))hk($("stn"));document.querySelectorAll('a.sosc[href*="google.com/maps"]').forEach(hk);
+window.openStation=openStn;
+})();
+</script>
+<script>
+(function(){
+const g=id=>document.getElementById(id);
+if(!g("rpGen"))return;
+const hi=()=>typeof curLang!=="undefined"&&curLang==="hi";
+const MSG={
+ en:{type:"Please select the crime type.",desc:"Please describe what happened (at least 20 characters).",mob:"Mobile number looks invalid. Use 10 digits or leave it empty.",amt:"Amount must be a positive number.",ok:"Complaint prepared. Copy it and paste on cybercrime.gov.in.",copied:"Summary copied to clipboard.",nocopy:"Copy not supported. Select the text manually.",nodata:"Prepare the complaint first.",noscan:"No scanned message found. Paste one in Quick Scan first.",popup:"Pop-up blocked, downloading instead.",portal:"Summary copied. Opening the official portal..."},
+ hi:{type:"कृपया अपराध का प्रकार चुनें।",desc:"कृपया बताएँ क्या हुआ (कम से कम 20 अक्षर)।",mob:"मोबाइल नंबर सही नहीं लगता। 10 अंक डालें या खाली छोड़ें।",amt:"रकम एक सही संख्या होनी चाहिए।",ok:"शिकायत तैयार है। इसे कॉपी करके cybercrime.gov.in पर चिपकाएँ।",copied:"सारांश कॉपी हो गया।",nocopy:"कॉपी समर्थित नहीं है। टेक्स्ट खुद चुनकर कॉपी करें।",nodata:"पहले शिकायत तैयार करें।",noscan:"कोई स्कैन किया मैसेज नहीं मिला। पहले Quick Scan में पेस्ट करें।",popup:"पॉप-अप ब्लॉक हुआ, डाउनलोड कर रहे हैं।",portal:"सारांश कॉपी हो गया। आधिकारिक पोर्टल खुल रहा है..."}
+};
+const M=k=>MSG[hi()?"hi":"en"][k];
+function applyRp(){
+ document.querySelectorAll("#report [data-ph-en]").forEach(e=>{e.placeholder=hi()?e.dataset.phHi:e.dataset.phEn});
+}
+applyRp();
+const ll=g("lLang");if(ll)ll.addEventListener("click",()=>setTimeout(applyRp,0));
+// max date = now
+(function(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());g("rpDate").max=d.toISOString().slice(0,16)})();
+let TEXT="";
+const say=(el,t)=>{g(el).textContent=t||""};
+function build(){
+ say("rpErr","");say("rpMsg","");
+ const type=g("rpType").value,desc=g("rpDesc").value.trim(),mob=g("rpMob").value.replace(/[\s\-]/g,"").replace(/^(\+91|91)(?=\d{10}$)/,""),amt=g("rpAmt").value.trim();
+ if(!type){say("rpErr",M("type"));g("rpType").focus();return null}
+ if(desc.length<20){say("rpErr",M("desc"));g("rpDesc").focus();return null}
+ if(mob&&!/^[6-9]\d{9}$/.test(mob)){say("rpErr",M("mob"));g("rpMob").focus();return null}
+ if(amt&&!(Number(amt)>=0)){say("rpErr",M("amt"));g("rpAmt").focus();return null}
+ const dt=g("rpDate").value,when=dt?new Date(dt).toLocaleString("en-IN",{dateStyle:"medium",timeStyle:"short"}):"Not specified";
+ const ev=[...document.querySelectorAll("#rpEv input:checked")].map(i=>i.value);
+ const v=id=>g(id).value.trim()||"Not specified";
+ const L=[
+ "CYBER CRIME COMPLAINT SUMMARY",
+ "Prepared with CyberShield 2077 on "+new Date().toLocaleString("en-IN",{dateStyle:"medium",timeStyle:"short"}),
+ "(For filing at cybercrime.gov.in / helpline 1930)",
+ "",
+ "CATEGORY: "+type,
+ "INCIDENT DATE/TIME: "+when,
+ "AMOUNT LOST: "+(amt?"Rs. "+Number(amt).toLocaleString("en-IN"):"Not specified"),
+ "PAYMENT MODE / BANK: "+v("rpPay"),
+ "TRANSACTION ID / UTR: "+v("rpTxn"),
+ "",
+ "SUSPECT DETAILS: "+v("rpSus"),
+ "",
+ "DESCRIPTION:",
+ desc,
+ "",
+ "EVIDENCE AVAILABLE: "+(ev.length?ev.join(", "):"None listed"),
+ "",
+ "COMPLAINANT: "+v("rpName"),
+ "MOBILE: "+(mob||"Not specified"),
+ "STATE / DISTRICT: "+v("rpLoc")
+ ];
+ if(amt&&Number(amt)>0)L.push("","NOTE: Money was lost. Call 1930 and inform the bank immediately to request a freeze.");
+ return L.join("\n");
+}
+g("rpGen").onclick=()=>{const t=build();if(!t)return;TEXT=t;g("rpTxt").textContent=t;g("rpIdle").style.display="none";g("rpRes").style.display="block";say("rpMsg",M("ok"));g("rpOut").scrollIntoView({behavior:"smooth",block:"nearest"})};
+function copy(t,done){
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,()=>fb(t,done))}else fb(t,done)
+}
+function fb(t,done){const a=document.createElement("textarea");a.value=t;a.style.cssText="position:fixed;opacity:0";document.body.appendChild(a);a.select();let ok=false;try{ok=document.execCommand("copy")}catch(e){}a.remove();if(ok)done();else say("rpMsg",M("nocopy"))}
+g("rpCopy").onclick=()=>{if(!TEXT){say("rpMsg",M("nodata"));return}copy(TEXT,()=>say("rpMsg",M("copied")))};
+function download(){
+ const b=new Blob([TEXT],{type:"text/plain;charset=utf-8"}),u=URL.createObjectURL(b),a=document.createElement("a");
+ a.href=u;a.download="cybercrime-complaint-summary.txt";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500)
+}
+g("rpDl").onclick=()=>{if(!TEXT){say("rpMsg",M("nodata"));return}download()};
+g("rpPrint").onclick=()=>{
+ if(!TEXT){say("rpMsg",M("nodata"));return}
+ const w=window.open("","_blank");
+ if(!w){say("rpMsg",M("popup"));download();return}
+ const esc=TEXT.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+ w.document.write('<!doctype html><title>Cyber Crime Complaint Summary</title><body style="font:14px/1.6 Consolas,monospace;padding:24px;color:#000"><pre style="white-space:pre-wrap">'+esc+'</pre>');
+ w.document.close();w.focus();setTimeout(()=>w.print(),300)
+};
+g("rpPortal").onclick=()=>{
+ if(!TEXT){say("rpMsg",M("nodata"));return}
+ copy(TEXT,()=>{say("rpMsg",M("portal"));window.open("https://cybercrime.gov.in","_blank","noopener")})
+};
+g("rpUseScan").onclick=()=>{
+ const q=g("qText"),b=g("body");
+ const t=((q&&q.value)||(b&&b.value)||"").trim();
+ if(!t){say("rpMsg",M("noscan"));return}
+ const d=g("rpDesc"),pre=d.value.trim();
+ d.value=(pre?pre+"\n\n":"")+"Suspicious message received:\n\""+t.slice(0,800)+"\"";
+ say("rpMsg","")
+};
+g("rpClr").onclick=()=>{
+ document.querySelectorAll("#report input:not([type=checkbox]),#report textarea").forEach(e=>e.value="");
+ document.querySelectorAll("#rpEv input").forEach(c=>c.checked=false);
+ g("rpType").selectedIndex=0;TEXT="";g("rpRes").style.display="none";g("rpIdle").style.display="";say("rpErr","");say("rpMsg","")
+};
+})();
+</script>
+<script>(function(){var b=document.getElementById("lLaunch2"),a=document.getElementById("lLaunch");if(b&&a)b.onclick=function(){a.click()}})();</script>
+<script>try{console.log("%cMade by cyberpunk","color:#4c8dff;font-weight:bold")}catch(e){}</script>
+</body>
+</html>
