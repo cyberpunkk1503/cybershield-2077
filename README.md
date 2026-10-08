@@ -53,9 +53,8 @@ https://cybershield2077.netlify.app
 
 Developed By
 
-Team CIPHER
-
-CipherCore Technologies
+team nexus
+NEXUS INTELLIGENCE
 
 Innovate. Secure. Protect.
 
